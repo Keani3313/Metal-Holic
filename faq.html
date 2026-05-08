@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ | MetalHolic Festival</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;700&family=Rock+Salt&family=Instrument+Serif&display=swap" rel="stylesheet">
+  <style>
+    .faq-hero {
+      margin-top: 80px;
+      padding: 60px 40px;
+      background: #40241c;
+      border-bottom: 4px solid #e30513;
+    }
+
+    .faq-hero h1 {
+      font-size: 48px;
+      color: #ffde00;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .faq-hero p {
+      font-family: "Instrument Serif", serif;
+      color: #ccc;
+      font-size: 16px;
+    }
+
+    .faq-container {
+      padding: 60px 40px;
+      background: #40241c;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .faq-category {
+      margin-bottom: 50px;
+    }
+
+    .faq-category h2 {
+      color: #ffde00;
+      font-size: 28px;
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+      padding-bottom: 15px;
+      border-bottom: 2px solid #e30513;
+    }
+
+    .faq-item {
+      background: #2a1510;
+      border-left: 4px solid #3a251a;
+      margin-bottom: 15px;
+      transition: all 0.3s ease;
+    }
+
+    .faq-item.active {
+      border-left-color: #e30513;
+      background: #1e0f0c;
+    }
+
+    .faq-question {
+      padding: 20px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+      transition: all 0.3s ease;
+    }
+
+    .faq-question:hover {
+      background: #3a251a;
+      padding-left: 25px;
+    }
+
+    .faq-question h3 {
+      color: #ffde00;
+      font-size: 16px;
+      margin: 0;
+      flex: 1;
+    }
+
+    .faq-toggle {
+      color: #e30513;
+      font-size: 24px;
+      font-weight: 700;
+      margin-left: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.active .faq-toggle {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 500px;
+    }
+
+    .faq-answer-content {
+      padding: 0 20px 20px 20px;
+      font-family: "Instrument Serif", serif;
+      color: #ddd;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .faq-answer-content p {
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .faq-hero {
+        padding: 40px 20px;
+      }
+
+      .faq-hero h1 {
+        font-size: 32px;
+      }
+
+      .faq-container {
+        padding: 40px 20px;
+      }
+
+      .faq-question {
+        padding: 18px 15px;
+      }
+
+      .faq-question h3 {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER / NAVIGATION -->
+<header class="header">
+  <a href="index.html" class="logo">
+    <img src="assets/logo.svg" alt="MetalHolic Festival">
+  </a>
+
+  <button class="menu-toggle" id="menuToggle">☰</button>
+
+  <nav class="nav" id="navMenu">
+    <a href="lineup.html">Lineup</a>
+    <a href="tours.html">Tours</a>
+    <a href="about.html">Mi MetalHolic</a>
+    <a href="news.html">News</a>
+    <a href="press.html">Press</a>
+    <a href="faq.html" class="active">FAQ</a>
+    <a href="tickets.html" class="ticket-btn">Tickets</a>
+  </nav>
+</header>
+
+<!-- FAQ HERO -->
+<section class="faq-hero">
+  <h1>FREQUENTLY ASKED QUESTIONS</h1>
+  <p>Find answers to common questions about MetalHolic Festival</p>
+</section>
+
+<!-- FAQ CONTENT -->
+<section class="faq-container">
+
+  <!-- TICKETS SECTION -->
+  <div class="faq-category">
+    <h2>Tickets & Passes</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>When do tickets go on sale?</h3>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-content">
+          <p>Early bird tickets are now available with a 40% discount. General admission tickets will be released on a rolling basis. Check our News section for the latest announcements regarding ticket release dates and pricing tiers.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>What are the different ticket types?</h3>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-content">
+          <p><strong>Day Pass:</strong> Single-day access to all performances</p>
+          <p><strong>3-Day Pass:</strong> Full festival access with all three days</p>
+          <p><strong>VIP Pass:</strong> Premium access with exclusive areas and merchandise</p>
+          <p><strong>Student Discount:</strong> Available with valid ID (10% off)</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>Can I transfer my ticket to someone else?</h3>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-content">
+          <p>Tickets are non-transferable and are tied to the purchaser's name. The ticket holder must present valid ID matching the name on the ticket at entry. For exceptional circumstances, contact our support team.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>What is your refund policy?</h3>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-content">
+          <p>Full refunds are available until 30 days before the festival. After that date, tickets may only be exchanged for a different date (if applicable). No refunds will be issued for cancellations due to weather or unforeseen circumstances beyond our control.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ACCOMMODATION & TRAVEL SECTION -->
+  <div class="faq-category">
+    <h2>Accommodation & Travel</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>Is accommodation included with the ticket?</h3>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-content">
+          <p>No, accommodation is not included with festival tickets. However, we provide recommendations for hotels, hostels, and camping options near Red Square. Visit our Travel section for partnered accommodations with special festival rates.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>How do I get to the festival venue?</h3>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-content">
+          <p><strong>By Air:</strong> Fly into Moscow's main airports (Sheremetyevo, Domodedovo, or Vnukovo), then take metro or taxi to Red Square.</p>
+          <p><strong>By Train:</strong> Moscow has excellent rail connections. Several trains daily arrive at central stations.</p>
+          <p><strong>Public Transport:</strong> The Moscow Metro is the easiest way to reach the venue.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>Do you offer group discounts?</h3>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-content">
+          <p>Yes! Groups of 10 or more receive a 15% discount. Contact our group sales team at groups@metalholic.com with your group details for a customized quote.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FESTIVAL EXPERIENCE SECTION -->
+  <div class="faq-category">
+    <h2>Festival Experience</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>What should I bring to the festival?</h3>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-content">
+          <p><strong>Essentials:</strong> Valid ID, ticket confirmation, comfortable clothing, sturdy shoes, and weather protection.</p>
+          <p><strong>Recommended:</strong> Sunscreen, water bottle, power bank, comfortable backpack, and cash/cards.</p>
+          <p><strong>Not Allowed:</strong> Professional cameras (single-lens reflex), pets (except service animals), and illegal substances.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>What is the age requirement?</h3>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-content">
+          <p>MetalHolic Festival is open to attendees 16 years and older. Those under 18 must be accompanied by an adult. Valid ID is required at entry.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>Can I bring outside food and beverages?</h3>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-content">
+          <p>Outside beverages are not permitted, but empty water bottles can be filled at provided stations. Non-perishable food items in unopened packaging are allowed. Festival food vendors offer a variety of options at all price points.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>Is there an accessibility program for disabled visitors?</h3>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-content">
+          <p>Yes, MetalHolic Festival is committed to accessibility. We offer wheelchair-accessible areas, accessible restrooms, and assistive listening devices. Contact accessibility@metalholic.com at least 30 days before the festival to request accommodations.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- MERCHANDISE SECTION -->
+  <div class="faq-category">
+    <h2>Merchandise & Shop</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>How long does shipping take?</h3>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-content">
+          <p><strong>Standard Shipping:</strong> 5-7 business days (Free on orders over €50)</p>
+          <p><strong>Express Shipping:</strong> 2-3 business days (€12 flat rate)</p>
+          <p><strong>International:</strong> 7-14 business days (varies by location)</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>What is your return policy?</h3>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-content">
+          <p>Unworn merchandise can be returned within 30 days of purchase for a full refund. Items must be in original condition with tags attached. Return shipping is free for orders over €50. Contact shop@metalholic.com to initiate a return.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>Are items available at the festival venue?</h3>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-content">
+          <p>Yes! Our official merchandise booth will be open during festival hours with limited stock of popular items. Sizes and availability vary. We recommend pre-ordering online if you want a specific item.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SAFETY & POLICIES SECTION -->
+  <div class="faq-category">
+    <h2>Safety & Policies</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>What are the weather contingency plans?</h3>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-content">
+          <p>The festival will proceed rain or shine. Stages are equipped with protective covers. In case of extreme weather, performances may be rescheduled. Monitor our News section and social media for real-time updates.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>What is your COVID-19 policy?</h3>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-content">
+          <p>We follow all local health regulations and recommendations. Health protocols may include hand sanitization stations, distancing guidelines, and mask recommendations. Check our website closer to the festival for any updated requirements.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>How do I report a safety concern?</h3>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-content">
+          <p>Our security team is visible throughout the venue. Report any concerns to the nearest staff member or visit the Information Booth. You can also email safety@metalholic.com after the festival to report incidents.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-column">
+      <h4>Festival</h4>
+      <a href="lineup.html">Lineup</a>
+      <a href="tours.html">Tours</a>
+      <a href="tickets.html">Tickets</a>
+      <a href="about.html">About</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Info</h4>
+      <a href="news.html">News</a>
+      <a href="faq.html" class="active">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a href="press.html">Press</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Support</h4>
+      <a href="contact.html">Contact Us</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="cookies.html">Cookies Policy</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Follow</h4>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+      <a href="#">Facebook</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    MetalHolic Festival — Red Square Edition © 2026
+  </div>
+</footer>
+
+<script>
+// FAQ Accordion functionality
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+  const question = item.querySelector('.faq-question');
+  
+  question.addEventListener('click', () => {
+    // Close other items
+    faqItems.forEach(otherItem => {
+      if (otherItem !== item) {
+        otherItem.classList.remove('active');
+      }
+    });
+    
+    // Toggle current item
+    item.classList.toggle('active');
+  });
+});
+</script>
+
+<script src="main.js"></script>
+
+</body>
+</html>
