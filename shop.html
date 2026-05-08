@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop | MetalHolic Festival</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;700&family=Rock+Salt&family=Instrument+Serif&display=swap" rel="stylesheet">
+  <style>
+    .shop-hero {
+      margin-top: 80px;
+      padding: 60px 40px;
+      background: #40241c;
+      border-bottom: 4px solid #e30513;
+    }
+
+    .shop-hero h1 {
+      font-size: 48px;
+      color: #ffde00;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .shop-hero p {
+      font-family: "Instrument Serif", serif;
+      color: #ccc;
+      font-size: 16px;
+    }
+
+    .shop-container {
+      padding: 60px 40px;
+      background: #40241c;
+    }
+
+    .shop-filters {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      padding: 8px 16px;
+      background: #2a1510;
+      border: 2px solid #e30513;
+      color: #ffde00;
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: #e30513;
+      color: white;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .product {
+      background: #2a1510;
+      border: 1px solid #3a251a;
+      transition: all 0.3s ease;
+      overflow: hidden;
+    }
+
+    .product:hover {
+      border-color: #e30513;
+      box-shadow: 0 8px 20px rgba(227, 5, 19, 0.2);
+      transform: translateY(-5px);
+    }
+
+    .product-image {
+      width: 100%;
+      height: 240px;
+      background: linear-gradient(135deg, #1e0f0c 0%, #3a251a 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #666;
+      font-size: 14px;
+      font-family: "Instrument Serif", serif;
+    }
+
+    .product-info {
+      padding: 20px;
+    }
+
+    .product-name {
+      font-size: 14px;
+      color: white;
+      font-weight: 700;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .product-description {
+      font-size: 12px;
+      color: #999;
+      font-family: "Instrument Serif", serif;
+      margin-bottom: 12px;
+      min-height: 30px;
+    }
+
+    .product-price {
+      font-size: 16px;
+      color: #ffde00;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .product-btn {
+      width: 100%;
+      padding: 10px;
+      background: #e30513;
+      color: white;
+      border: none;
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: 700;
+    }
+
+    .product-btn:hover {
+      background: #b90410;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 1024px) {
+      .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .shop-hero {
+        padding: 40px 20px;
+      }
+
+      .shop-hero h1 {
+        font-size: 32px;
+      }
+
+      .shop-container {
+        padding: 40px 20px;
+      }
+
+      .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .products-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER / NAVIGATION -->
+<header class="header">
+  <a href="index.html" class="logo">
+    <img src="assets/logo.svg" alt="MetalHolic Festival">
+  </a>
+
+  <button class="menu-toggle" id="menuToggle">☰</button>
+
+  <nav class="nav" id="navMenu">
+    <a href="lineup.html">Lineup</a>
+    <a href="tours.html">Tours</a>
+    <a href="about.html">Mi MetalHolic</a>
+    <a href="news.html">News</a>
+    <a href="press.html">Press</a>
+    <a href="shop.html" class="active">Shop</a>
+    <a href="tickets.html" class="ticket-btn">Tickets</a>
+  </nav>
+</header>
+
+<!-- SHOP HERO -->
+<section class="shop-hero">
+  <h1>OFFICIAL SHOP</h1>
+  <p>Limited edition merchandise and festival essentials from MetalHolic Red Square Edition</p>
+</section>
+
+<!-- SHOP PRODUCTS -->
+<section class="shop-container">
+  
+  <div class="shop-filters">
+    <button class="filter-btn active">All</button>
+    <button class="filter-btn">Apparel</button>
+    <button class="filter-btn">Accessories</button>
+    <button class="filter-btn">Vinyl</button>
+    <button class="filter-btn">Limited Edition</button>
+  </div>
+
+  <div class="products-grid">
+    
+    <!-- Product 1 -->
+    <div class="product">
+      <div class="product-image">[FESTIVAL T-SHIRT]</div>
+      <div class="product-info">
+        <div class="product-name">MetalHolic T-Shirt</div>
+        <div class="product-description">Premium cotton tee with festival branding</div>
+        <div class="product-price">$32.00</div>
+        <button class="product-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <div class="product-image">[FESTIVAL HOODIE]</div>
+      <div class="product-info">
+        <div class="product-name">Red Square Hoodie</div>
+        <div class="product-description">Comfortable pullover with embroidered logo</div>
+        <div class="product-price">$58.00</div>
+        <button class="product-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <div class="product-image">[VINYL RECORD]</div>
+      <div class="product-info">
+        <div class="product-name">Festival Compilation Vinyl</div>
+        <div class="product-description">Limited edition vinyl with exclusive tracks</div>
+        <div class="product-price">$45.00</div>
+        <button class="product-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+      <div class="product-image">[FESTIVAL HAT]</div>
+      <div class="product-info">
+        <div class="product-name">MetalHolic Cap</div>
+        <div class="product-description">Adjustable baseball cap with classic logo</div>
+        <div class="product-price">$24.00</div>
+        <button class="product-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="product">
+      <div class="product-image">[POSTER]</div>
+      <div class="product-info">
+        <div class="product-name">Official Festival Poster</div>
+        <div class="product-description">A2 size art print by acclaimed designer</div>
+        <div class="product-price">$18.00</div>
+        <button class="product-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="product">
+      <div class="product-image">[TOTE BAG]</div>
+      <div class="product-info">
+        <div class="product-name">Canvas Tote Bag</div>
+        <div class="product-description">Eco-friendly festival tote bag</div>
+        <div class="product-price">$22.00</div>
+        <button class="product-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Product 7 -->
+    <div class="product">
+      <div class="product-image">[COLLECTOR'S BOX]</div>
+      <div class="product-info">
+        <div class="product-name">Collector's Edition Box</div>
+        <div class="product-description">Limited T-shirt, vinyl, and exclusive merch</div>
+        <div class="product-price">$99.00</div>
+        <button class="product-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Product 8 -->
+    <div class="product">
+      <div class="product-image">[STICKER PACK]</div>
+      <div class="product-info">
+        <div class="product-name">Sticker Pack (5pcs)</div>
+        <div class="product-description">Collectible festival stickers</div>
+        <div class="product-price">$8.00</div>
+        <button class="product-btn">Add to Cart</button>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-column">
+      <h4>Festival</h4>
+      <a href="lineup.html">Lineup</a>
+      <a href="tours.html">Tours</a>
+      <a href="tickets.html">Tickets</a>
+      <a href="about.html">About</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Info</h4>
+      <a href="news.html">News</a>
+      <a href="forum.html">Forum</a>
+      <a href="press.html">Press</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Shop</h4>
+      <a href="shop.html">Merchandise</a>
+      <a href="shop.html">Orders</a>
+      <a href="shop.html">Returns</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Legal</h4>
+      <a href="legal-notice.html">Legal Notice</a>
+      <a href="cookies.html">Cookies Policy</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    MetalHolic Festival — Red Square Edition © 2026
+  </div>
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>
