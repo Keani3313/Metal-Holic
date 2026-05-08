@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News | MetalHolic Festival</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;700&family=Rock+Salt&family=Instrument+Serif&display=swap" rel="stylesheet">
+  <style>
+    .news-hero {
+      margin-top: 80px;
+      padding: 60px 40px;
+      background: #40241c;
+      border-bottom: 4px solid #e30513;
+    }
+
+    .news-hero h1 {
+      font-size: 48px;
+      color: #ffde00;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .news-hero p {
+      font-family: "Instrument Serif", serif;
+      color: #ccc;
+      font-size: 16px;
+    }
+
+    .news-grid {
+      padding: 60px 40px;
+      background: #40241c;
+    }
+
+    .news-item {
+      background: #2a1510;
+      border-left: 4px solid #e30513;
+      padding: 25px;
+      margin-bottom: 25px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .news-item:hover {
+      transform: translateX(5px);
+      border-left-color: #ffde00;
+      box-shadow: 0 4px 12px rgba(227, 5, 19, 0.2);
+    }
+
+    .news-date {
+      font-size: 12px;
+      color: #ffde00;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .news-item h3 {
+      font-size: 22px;
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    .news-item p {
+      font-family: "Instrument Serif", serif;
+      color: #ddd;
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .news-category {
+      display: inline-block;
+      padding: 4px 10px;
+      background: rgba(255, 222, 0, 0.1);
+      color: #ffde00;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-right: 8px;
+    }
+
+    .read-more {
+      color: #e30513;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+    }
+
+    .read-more:hover {
+      color: #ffde00;
+    }
+
+    @media (max-width: 768px) {
+      .news-hero {
+        padding: 40px 20px;
+      }
+
+      .news-hero h1 {
+        font-size: 32px;
+      }
+
+      .news-grid {
+        padding: 40px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER / NAVIGATION -->
+<header class="header">
+  <a href="index.html" class="logo">
+    <img src="assets/logo.svg" alt="MetalHolic Festival">
+  </a>
+
+  <button class="menu-toggle" id="menuToggle">☰</button>
+
+  <nav class="nav" id="navMenu">
+    <a href="lineup.html">Lineup</a>
+    <a href="tours.html">Tours</a>
+    <a href="about.html">Mi MetalHolic</a>
+    <a href="news.html" class="active">News</a>
+    <a href="press.html">Press</a>
+    <a href="tickets.html" class="ticket-btn">Tickets</a>
+  </nav>
+</header>
+
+<!-- NEWS HERO -->
+<section class="news-hero">
+  <h1>FESTIVAL NEWS</h1>
+  <p>Latest updates, announcements, and stories from MetalHolic Red Square Edition</p>
+</section>
+
+<!-- NEWS GRID -->
+<section class="news-grid">
+  
+  <article class="news-item">
+    <div class="news-date">May 8, 2026</div>
+    <span class="news-category">Lineup</span>
+    <h3>Complete Lineup Announcement — Three Days of Sonic Architecture</h3>
+    <p>MetalHolic is thrilled to unveil the complete three-day lineup spanning emotional atmosphere, industrial chaos, and reflective post-metal landscapes. From Deftones' atmospheric mastery to Nothing's ambient noise exploration...</p>
+    <a href="news/news-01.html" class="read-more">Read Full Story →</a>
+  </article>
+
+  <article class="news-item">
+    <div class="news-date">May 5, 2026</div>
+    <span class="news-category">Tickets</span>
+    <h3>Early Bird Tickets Now Available — 40% Off Festival Pass</h3>
+    <p>Early bird tickets are now live for the MetalHolic Red Square Edition. Limited availability on our festival pass offering 40% discount for the first 500 purchases. Secure your spot in this unique sonic experience before prices increase...</p>
+    <a href="news/news-02.html" class="read-more">Read Full Story →</a>
+  </article>
+
+  <article class="news-item">
+    <div class="news-date">May 1, 2026</div>
+    <span class="news-category">Festival Info</span>
+    <h3>Experience Design: Understanding MetalHolic's Three-Day Architecture</h3>
+    <p>MetalHolic isn't a traditional festival. It's a conceptual journey through three distinct sonic environments, each designed as a documentary of emotional and spatial states. Learn more about how we've structured this unique festival experience...</p>
+    <a href="news/news-03.html" class="read-more">Read Full Story →</a>
+  </article>
+
+  <article class="news-item">
+    <div class="news-date">April 28, 2026</div>
+    <span class="news-category">Sponsors</span>
+    <h3>Major Partnerships Announced — Premium Brands Support MetalHolic</h3>
+    <p>MetalHolic is excited to announce partnerships with leading international brands committed to cultural innovation and sound preservation. These collaborations enable us to deliver an unprecedented festival experience...</p>
+    <a href="news/news-04.html" class="read-more">Read Full Story →</a>
+  </article>
+
+  <article class="news-item">
+    <div class="news-date">April 20, 2026</div>
+    <span class="news-category">Community</span>
+    <h3>Red Square Residency Program — Artists Invited to Participate</h3>
+    <p>MetalHolic launches its artist residency program, inviting emerging producers, visual artists, and sound designers to collaborate in creating immersive installations across the festival grounds. Applications now open...</p>
+    <a href="news/news-05.html" class="read-more">Read Full Story →</a>
+  </article>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-column">
+      <h4>Festival</h4>
+      <a href="lineup.html">Lineup</a>
+      <a href="tours.html">Tours</a>
+      <a href="tickets.html">Tickets</a>
+      <a href="about.html">About</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Info</h4>
+      <a href="news.html">News</a>
+      <a href="forum.html">Forum</a>
+      <a href="press.html">Press</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Legal</h4>
+      <a href="legal-notice.html">Legal Notice</a>
+      <a href="cookies.html">Cookies Policy</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Sponsors</h4>
+      <div class="sponsors">
+        <img src="assets/sponsors/sts.svg" alt="Sponsor" />
+        <img src="assets/sponsors/mts.svg" alt="Sponsor" />
+        <img src="assets/sponsors/sber.svg" alt="Sponsor" />
+        <img src="assets/sponsors/yandex.svg" alt="Sponsor" />
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    MetalHolic Festival — Red Square Edition © 2026
+  </div>
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>
