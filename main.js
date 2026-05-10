@@ -47,4 +47,23 @@
       form.reset();
     });
   });
+
+  // Day-filter chips on lineup page swap the visible timetable
+  var dayChips = document.querySelectorAll(".filter-chip[data-day]");
+  if (dayChips.length) {
+    dayChips.forEach(function (chip) {
+      chip.addEventListener("click", function () {
+        var day = chip.getAttribute("data-day");
+        dayChips.forEach(function (c) { c.classList.remove("is-active"); });
+        chip.classList.add("is-active");
+        document.querySelectorAll(".timetable[data-day]").forEach(function (t) {
+          if (t.getAttribute("data-day") === day) {
+            t.removeAttribute("hidden");
+          } else {
+            t.setAttribute("hidden", "");
+          }
+        });
+      });
+    });
+  }
 })();
