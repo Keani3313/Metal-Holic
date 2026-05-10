@@ -19,24 +19,27 @@
 
 /* ---------- 1. TOKENS ---------- */
 :root {
-  --c-bg:          #0e0907;       /* near black */
-  --c-bg-2:        #14100c;
-  --c-brown:       #2a1c14;       /* dark brown */
-  --c-brown-deep:  #1a110b;
-  --c-brown-mid:   #3d2a1d;
-  --c-paper:       #ece1cf;       /* dirty white */
+  --c-bg:          #40241c;       /* festival brown background */
+  --c-bg-2:        #2e1912;       /* darker brown for cards */
+  --c-brown:       #40241c;       /* alias of bg, for legacy classes */
+  --c-brown-deep:  #1d0f09;       /* near-black brown for hero / footer */
+  --c-brown-mid:   #5a3525;
+  --c-paper:       #f5ecd9;       /* dirty white */
   --c-paper-dim:   #d8c9b0;
-  --c-paper-soft:  #f5ecd9;
-  --c-red:         #8a1416;       /* deep red */
-  --c-red-bright:  #b81f1c;
-  --c-red-burn:    #5b0c0d;
-  --c-text:        #ddd0bb;
-  --c-text-dim:    #8e7d65;
-  --c-line:        #4a3527;
-  --c-line-soft:   #6b513e;
+  --c-paper-soft:  #faf2e2;
+  --c-red:         #e30513;       /* primary energy / emotion */
+  --c-red-bright:  #e30513;
+  --c-red-burn:    #8a020c;
+  --c-yellow:      #ffde00;       /* highlight / attention */
+  --c-yellow-deep: #d4b800;
+  --c-text:        #ece1cf;
+  --c-text-dim:    #b8a78a;
+  --c-line:        #5a3a2c;
+  --c-line-soft:   #7d5e4a;
 
   --f-display: "Barlow Condensed", "Arial Narrow", system-ui, sans-serif;
-  --f-body:    "Instrument Serif", "Times New Roman", Georgia, serif;
+  --f-body:    "Barlow", "Helvetica Neue", system-ui, sans-serif;
+  --f-accent:  "Rock Salt", "Permanent Marker", "Comic Sans MS", cursive;
 
   --max-width: 1280px;
   --gutter:    40px;
@@ -105,16 +108,26 @@ p  { font-family: var(--f-body); font-size: 18px; line-height: 1.7; color: var(-
   color: var(--c-red-bright);
   display: inline-block;
 }
+.eyebrow.yellow { color: var(--c-yellow); }
+
+.accent-script {
+  font-family: var(--f-accent);
+  color: var(--c-yellow);
+  font-size: 0.9em;
+  letter-spacing: 0;
+  text-transform: none;
+  line-height: 1.2;
+}
 
 .capitular p:first-of-type::first-letter,
 p.capitular::first-letter,
 .capitular::first-letter {
-  font-family: var(--f-body);
-  font-size: 4.4em;
+  font-family: var(--f-accent);
+  font-size: 3.6em;
   float: left;
-  line-height: 0.85;
-  padding: 6px 12px 0 0;
-  color: var(--c-red-bright);
+  line-height: 0.95;
+  padding: 14px 18px 0 0;
+  color: var(--c-red);
   font-weight: 400;
 }
 
@@ -268,6 +281,25 @@ p.capitular::first-letter,
   font-size: 0.6em;
   letter-spacing: 0.04em;
 }
+.hero-text h1 em::after {
+  content: "";
+  display: block;
+  width: 0.42em;
+  height: 0.07em;
+  background: var(--c-yellow);
+  margin-top: 0.08em;
+}
+.hero-tagline {
+  font-family: var(--f-accent);
+  color: var(--c-yellow);
+  font-size: clamp(16px, 1.4vw, 22px);
+  letter-spacing: 0;
+  text-transform: none;
+  line-height: 1.3;
+  margin-bottom: 14px;
+  display: inline-block;
+  transform: rotate(-2deg);
+}
 .hero-text p {
   font-family: var(--f-body);
   font-size: clamp(18px, 1.6vw, 24px);
@@ -389,6 +421,13 @@ p.capitular::first-letter,
   margin-bottom: 18px;
   display: inline-block;
 }
+.live-card.now .live-tag {
+  background: var(--c-yellow);
+  color: #1a0f08;
+  padding: 4px 10px;
+  letter-spacing: 0.24em;
+}
+.live-card.now { background: var(--c-bg-2); }
 .live-card h3 {
   font-size: 32px;
   color: var(--c-paper);
@@ -462,6 +501,14 @@ p.capitular::first-letter,
   transition: background .2s ease, color .2s ease;
 }
 .artist-card:hover { background: var(--c-red-burn); }
+.artist-card.headline {
+  background: linear-gradient(180deg, rgba(255,222,0,0.10), rgba(227,5,19,0.10));
+  border-left: 3px solid var(--c-yellow);
+}
+.artist-card.headline:hover {
+  background: linear-gradient(180deg, rgba(255,222,0,0.18), rgba(227,5,19,0.20));
+}
+.artist-card.headline .meta { color: var(--c-yellow); }
 .artist-card .name {
   font-family: var(--f-display);
   font-weight: 700;
