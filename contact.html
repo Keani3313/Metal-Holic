@@ -1,342 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | MetalHolic Festival</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;700&family=Rock+Salt&family=Instrument+Serif&display=swap" rel="stylesheet">
-  <style>
-    .contact-hero {
-      margin-top: 80px;
-      padding: 60px 40px;
-      background: #40241c;
-      border-bottom: 4px solid #e30513;
-    }
-
-    .contact-hero h1 {
-      font-size: 48px;
-      color: #ffde00;
-      letter-spacing: 2px;
-      margin-bottom: 10px;
-    }
-
-    .contact-hero p {
-      font-family: "Instrument Serif", serif;
-      color: #ccc;
-      font-size: 16px;
-    }
-
-    .contact-container {
-      padding: 60px 40px;
-      background: #40241c;
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 60px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .contact-form {
-      background: #2a1510;
-      padding: 40px;
-      border-left: 4px solid #e30513;
-    }
-
-    .form-group {
-      margin-bottom: 20px;
-    }
-
-    .form-group label {
-      display: block;
-      margin-bottom: 8px;
-      color: #ffde00;
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-weight: 700;
-    }
-
-    .form-group input,
-    .form-group textarea,
-    .form-group select {
-      width: 100%;
-      padding: 12px;
-      background: #1e0f0c;
-      border: 1px solid #3a251a;
-      color: white;
-      font-family: "Barlow Condensed", sans-serif;
-      font-size: 14px;
-      transition: all 0.3s ease;
-    }
-
-    .form-group input:focus,
-    .form-group textarea:focus,
-    .form-group select:focus {
-      outline: none;
-      border-color: #e30513;
-      box-shadow: 0 0 10px rgba(227, 5, 19, 0.3);
-    }
-
-    .form-group textarea {
-      resize: vertical;
-      min-height: 120px;
-      font-family: "Instrument Serif", serif;
-    }
-
-    .form-submit {
-      width: 100%;
-      padding: 14px;
-      background: #e30513;
-      color: white;
-      border: none;
-      text-transform: uppercase;
-      font-size: 12px;
-      letter-spacing: 1px;
-      font-weight: 700;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-
-    .form-submit:hover {
-      background: #b90410;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(227, 5, 19, 0.3);
-    }
-
-    .contact-info {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-    }
-
-    .info-block {
-      background: #2a1510;
-      padding: 25px;
-      border-left: 4px solid #ffde00;
-    }
-
-    .info-block h3 {
-      color: #ffde00;
-      font-size: 16px;
-      margin-bottom: 12px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    .info-block p {
-      font-family: "Instrument Serif", serif;
-      color: #ddd;
-      font-size: 14px;
-      line-height: 1.6;
-    }
-
-    .info-block a {
-      color: #e30513;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-
-    .info-block a:hover {
-      color: #ffde00;
-    }
-
-    .social-links {
-      display: flex;
-      gap: 12px;
-      margin-top: 15px;
-    }
-
-    .social-links a {
-      display: inline-flex;
-      width: 40px;
-      height: 40px;
-      align-items: center;
-      justify-content: center;
-      background: #1e0f0c;
-      border: 2px solid #e30513;
-      color: #ffde00;
-      text-decoration: none;
-      font-weight: 700;
-      transition: all 0.3s ease;
-    }
-
-    .social-links a:hover {
-      background: #e30513;
-      color: white;
-      transform: translateY(-2px);
-    }
-
-    @media (max-width: 768px) {
-      .contact-hero {
-        padding: 40px 20px;
-      }
-
-      .contact-hero h1 {
-        font-size: 32px;
-      }
-
-      .contact-container {
-        grid-template-columns: 1fr;
-        gap: 40px;
-        padding: 40px 20px;
-      }
-
-      .contact-form {
-        padding: 30px 20px;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — MetalHolic Festival</title>
+<meta name="description" content="Contact MetalHolic Festival — general, press, accessibility and accreditation.">
+<link rel="icon" href="assets/logo/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;700&family=Instrument+Serif&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<!-- HEADER / NAVIGATION -->
 <header class="header">
   <a href="index.html" class="logo">
-    <img src="assets/logo.svg" alt="MetalHolic Festival">
+    <img src="assets/logo/logo.svg" alt="MetalHolic Festival">
+    <span class="logo-word">MetalHolic</span>
   </a>
-
-  <button class="menu-toggle" id="menuToggle">☰</button>
-
+  <button class="menu-toggle" id="menuToggle" aria-label="Open menu">≡</button>
   <nav class="nav" id="navMenu">
     <a href="lineup.html">Lineup</a>
     <a href="tours.html">Tours</a>
-    <a href="about.html">Mi MetalHolic</a>
-    <a href="news.html">News</a>
+    <a href="forum.html">Forum</a>
     <a href="press.html">Press</a>
-    <a href="shop.html">Shop</a>
+    <a href="about.html">Mi MetalHolic</a>
+    <a href="contact.html">Contact</a>
     <a href="tickets.html" class="ticket-btn">Tickets</a>
   </nav>
 </header>
 
-<!-- CONTACT HERO -->
-<section class="contact-hero">
-  <h1>GET IN TOUCH</h1>
-  <p>Have questions? Contact us for festival inquiries, press, or partnership opportunities</p>
+<section class="page-head">
+  <div class="container">
+    <div class="crumbs">Index / Contact</div>
+    <h1>Write<br><span class="accent">to us.</span></h1>
+    <p class="lede">For tickets, accessibility, accreditation, partnerships or simply questions about the festival itself. We respond within five working days. We respond to thoughtful messages first.</p>
+  </div>
 </section>
 
-<!-- CONTACT CONTENT -->
-<section class="contact-container">
-  
-  <!-- Contact Form -->
-  <div class="contact-form">
-    <form>
-      <div class="form-group">
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" required>
-      </div>
+<section class="section section--brown">
+  <div class="container form-wrap">
 
-      <div class="form-group">
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" required>
+    <form class="form" data-acknowledge>
+      <div>
+        <label for="c-name">Name</label>
+        <input id="c-name" type="text" name="name" required placeholder="First and last">
       </div>
-
-      <div class="form-group">
-        <label for="subject">Subject</label>
-        <select id="subject" name="subject" required>
-          <option value="">Select a subject...</option>
-          <option value="festival">Festival Questions</option>
-          <option value="tickets">Ticket Support</option>
-          <option value="press">Press Inquiries</option>
-          <option value="partnership">Partnership Opportunities</option>
-          <option value="other">Other</option>
+      <div>
+        <label for="c-email">E-mail</label>
+        <input id="c-email" type="email" name="email" required placeholder="you@somewhere.net">
+      </div>
+      <div>
+        <label for="c-topic">Topic</label>
+        <select id="c-topic" name="topic">
+          <option>General enquiry</option>
+          <option>Tickets &amp; accessibility</option>
+          <option>Press accreditation</option>
+          <option>Industry / partnerships</option>
+          <option>Forum / community</option>
+          <option>Lost &amp; found</option>
         </select>
       </div>
-
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required></textarea>
+      <div>
+        <label for="c-msg">Message</label>
+        <textarea id="c-msg" name="message" required placeholder="Long form welcome. Please don't write in capitals."></textarea>
       </div>
-
-      <button type="submit" class="form-submit">Send Message</button>
+      <div>
+        <label style="display:flex; align-items:center; gap:10px; letter-spacing:0.16em;">
+          <input type="checkbox" required style="width:auto;">
+          <span style="font-family: var(--f-display); font-size: 11px; color: var(--c-text-dim);">I have read the <a href="privacy.html" style="color: var(--c-red-bright); border-bottom: 1px dotted var(--c-red);">Privacy Policy</a>.</span>
+        </label>
+      </div>
+      <button class="btn" type="submit">Send message</button>
+      <p class="form-ack serif" style="display:none; color: var(--c-paper); border-left: 3px solid var(--c-red); padding-left: 14px;">Thank you. The message has been received and filed. We will reply within five working days.</p>
     </form>
+
+    <aside class="contact-info">
+      <p class="capitular">MetalHolic is operated as an independent cultural festival by the MetalHolic Foundation. The address below is our administrative office; please do not visit unannounced. For all enquiries, write — we respond on paper, and we respond well.</p>
+
+      <span class="label">General</span>
+      <a href="mailto:hello@metalholic.fest" style="color: var(--c-red-bright); border-bottom: 1px dotted var(--c-red);">hello@metalholic.fest</a>
+
+      <span class="label">Tickets</span>
+      <a href="mailto:tickets@metalholic.fest" style="color: var(--c-red-bright); border-bottom: 1px dotted var(--c-red);">tickets@metalholic.fest</a>
+
+      <span class="label">Press</span>
+      <a href="mailto:press@metalholic.fest" style="color: var(--c-red-bright); border-bottom: 1px dotted var(--c-red);">press@metalholic.fest</a>
+
+      <span class="label">Accessibility</span>
+      <a href="mailto:access@metalholic.fest" style="color: var(--c-red-bright); border-bottom: 1px dotted var(--c-red);">access@metalholic.fest</a>
+
+      <span class="label">Office</span>
+      MetalHolic Foundation<br>
+      Bolshoy Cherkasskiy lane, 11<br>
+      109012 Moscow
+
+      <span class="label">Phone</span>
+      +7 (495) 000-00-00<br>
+      Mon — Fri, 11:00 — 18:00 MSK
+
+      <span class="label">Press &amp; embargo line</span>
+      Strictly accredited only — see <a href="press.html" style="color: var(--c-red-bright); border-bottom: 1px dotted var(--c-red);">Press</a>.
+    </aside>
   </div>
-
-  <!-- Contact Information -->
-  <div class="contact-info">
-    
-    <div class="info-block">
-      <h3>📍 Location</h3>
-      <p>
-        Red Square<br>
-        Moscow, Russia<br><br>
-        Festival Edition: May 2026
-      </p>
-    </div>
-
-    <div class="info-block">
-      <h3>✉️ Email</h3>
-      <p>
-        <strong>General:</strong><br>
-        <a href="mailto:info@metalholic.com">info@metalholic.com</a><br><br>
-        <strong>Press:</strong><br>
-        <a href="mailto:press@metalholic.com">press@metalholic.com</a>
-      </p>
-    </div>
-
-    <div class="info-block">
-      <h3>🔗 Social</h3>
-      <p>Follow us for the latest updates and festival news:</p>
-      <div class="social-links">
-        <a href="#" title="Instagram">IG</a>
-        <a href="#" title="Twitter">𝕏</a>
-        <a href="#" title="Facebook">FB</a>
-        <a href="#" title="YouTube">YT</a>
-      </div>
-    </div>
-
-    <div class="info-block">
-      <h3>ℹ️ FAQ</h3>
-      <p>
-        Can't find your answer? Check our <a href="#">FAQ section</a> for common questions about tickets, accommodation, and festival details.
-      </p>
-    </div>
-
-  </div>
-
 </section>
 
-<!-- FOOTER -->
 <footer class="footer">
-  <div class="footer-top">
-    <div class="footer-column">
-      <h4>Festival</h4>
-      <a href="lineup.html">Lineup</a>
-      <a href="tours.html">Tours</a>
-      <a href="tickets.html">Tickets</a>
-      <a href="about.html">About</a>
+  <div class="container">
+    <div class="footer-mark">METALHOLIC ★ RED SQUARE 2026</div>
+    <div class="footer-top">
+      <div class="footer-column"><h4>Festival</h4><a href="index.html">Home</a><a href="lineup.html">Lineup</a><a href="tours.html">Tours</a><a href="tickets.html">Tickets</a></div>
+      <div class="footer-column"><h4>Community</h4><a href="forum.html">Forum</a><a href="press.html">Press</a><a href="about.html">Mi MetalHolic</a><a href="contact.html">Contact</a></div>
+      <div class="footer-column"><h4>Legal</h4><a href="legal-notice.html">Legal Notice</a><a href="cookies.html">Cookies Policy</a><a href="privacy.html">Privacy Policy</a></div>
+      <div class="footer-column"><h4>Sponsors</h4>
+        <div class="sponsors">
+          <img src="assets/sponsors/sts.svg" alt="STS"><img src="assets/sponsors/mts.svg" alt="MTS">
+          <img src="assets/sponsors/sber.svg" alt="Sber"><img src="assets/sponsors/yandex.svg" alt="Yandex">
+          <img src="assets/sponsors/ultra.svg" alt="Ultra"><img src="assets/sponsors/tcl.svg" alt="TCL">
+        </div>
+      </div>
     </div>
-
-    <div class="footer-column">
-      <h4>Info</h4>
-      <a href="news.html">News</a>
-      <a href="forum.html">Forum</a>
-      <a href="press.html">Press</a>
-      <a href="contact.html" class="active">Contact</a>
+    <div class="footer-bottom">
+      <span>© 2026 MetalHolic Festival — Red Square Edition</span>
+      <span>Moscow ★ 14 — 16.08.2026</span>
     </div>
-
-    <div class="footer-column">
-      <h4>Shop</h4>
-      <a href="shop.html">Merchandise</a>
-      <a href="tickets.html">Tickets</a>
-      <a href="shop.html">Returns</a>
-    </div>
-
-    <div class="footer-column">
-      <h4>Legal</h4>
-      <a href="legal-notice.html">Legal Notice</a>
-      <a href="cookies.html">Cookies Policy</a>
-      <a href="privacy.html">Privacy</a>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    MetalHolic Festival — Red Square Edition © 2026
   </div>
 </footer>
-
 <script src="main.js"></script>
-
 </body>
 </html>

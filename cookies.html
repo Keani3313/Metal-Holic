@@ -2,48 +2,132 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Cookies Policy - MetalHolic</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cookies Policy — MetalHolic Festival</title>
+<meta name="description" content="MetalHolic Festival Cookies Policy — what we set, why, and how to control it.">
+<link rel="icon" href="assets/logo/logo.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styles.css">
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;700&family=Instrument+Serif&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
 <header class="header">
   <a href="index.html" class="logo">
-    <img src="assets/logo/logo.svg">
+    <img src="assets/logo/logo.svg" alt="MetalHolic Festival">
+    <span class="logo-word">MetalHolic</span>
   </a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Open menu">≡</button>
+  <nav class="nav" id="navMenu">
+    <a href="lineup.html">Lineup</a>
+    <a href="tours.html">Tours</a>
+    <a href="forum.html">Forum</a>
+    <a href="press.html">Press</a>
+    <a href="about.html">Mi MetalHolic</a>
+    <a href="contact.html">Contact</a>
+    <a href="tickets.html" class="ticket-btn">Tickets</a>
+  </nav>
 </header>
 
-<section class="lineup-preview serif">
-
-<h2>COOKIES POLICY</h2>
-
-<p class="capitular">
-This Cookies Policy explains how MetalHolic Festival uses cookies and similar technologies on its website to enhance user experience and analyze interaction patterns within the platform.
-</p>
-
-<h3>WHAT ARE COOKIES</h3>
-<p>
-Cookies are small text files stored on your device when you visit a website. They help us understand navigation behavior and improve functionality.
-</p>
-
-<h3>HOW WE USE THEM</h3>
-<p>
-We use cookies to maintain session stability, analyze traffic trends, and personalize the browsing experience within the festival website structure.
-</p>
-
-<h3>THIRD PARTY COOKIES</h3>
-<p>
-Some cookies may be placed by external services such as embedded media players or analytics tools. These are governed by their own privacy policies.
-</p>
-
-<h3>CONTROL</h3>
-<p>
-You may disable cookies in your browser settings, though this may affect certain functionalities of the site.
-</p>
-
+<section class="page-head">
+  <div class="container">
+    <div class="crumbs">Index / Legal / Cookies</div>
+    <h1>Cookies<br><span class="accent">Policy</span></h1>
+    <p class="lede">This page explains, in plain language, which cookies and similar technologies the MetalHolic website uses, why we use them, how long they live, and how you can refuse or delete them.</p>
+  </div>
 </section>
 
+<section class="section section--brown">
+  <div class="container">
+    <article class="legal-doc">
+      <p class="doc-meta">Document MH-LEG-002 · Version 2.4 · Last updated 02 May 2026 · Aligned with Directive 2002/58/EC ("ePrivacy") and the GDPR</p>
+
+      <div class="toc">
+        <h4>Contents</h4>
+        <a href="#what">1 — What is a cookie?</a>
+        <a href="#kinds">2 — What kinds we use</a>
+        <a href="#table">3 — Detailed cookie table</a>
+        <a href="#consent">4 — Your consent</a>
+        <a href="#manage">5 — Managing &amp; deleting cookies</a>
+        <a href="#third">6 — Third-party services</a>
+        <a href="#changes">7 — Changes to this policy</a>
+      </div>
+
+      <h2 id="what">1 — What is a cookie?</h2>
+      <p>A cookie is a small text file stored on your device by your browser when you visit a website. It allows the site to remember your actions and preferences over a period of time. Similar technologies (local storage, pixels, fingerprints) are treated as cookies in this policy.</p>
+
+      <h2 id="kinds">2 — What kinds we use</h2>
+      <h3>2.1 Strictly necessary</h3>
+      <p>Required for the website to function: session continuity, ticket-cart state, and security tokens. These cannot be disabled and do not require consent under the ePrivacy Directive.</p>
+      <h3>2.2 Functional</h3>
+      <p>Optional cookies that remember your preferences (language, dark/light, accepted-cookies state). Set only with your consent.</p>
+      <h3>2.3 Analytical</h3>
+      <p>Aggregated, non-identifying statistics on which pages are visited, how long, and from which referrer. Set only with your consent. We use a privacy-respecting, EU-hosted analytics provider; we do not use Google Analytics on this site.</p>
+      <h3>2.4 Forum cookies</h3>
+      <p>Cookies set by the forum component to keep you logged in, remember your reading position and your "mark as read" state. Set on the Forum page only and only after registration.</p>
+
+      <h2 id="table">3 — Detailed cookie table</h2>
+      <table>
+        <thead>
+          <tr><th>Name</th><th>Provider</th><th>Purpose</th><th>Lifetime</th><th>Type</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>mh_session</td><td>metalholic.fest</td><td>Server session continuity</td><td>Session</td><td>Strictly necessary</td></tr>
+          <tr><td>mh_csrf</td><td>metalholic.fest</td><td>Form security token</td><td>Session</td><td>Strictly necessary</td></tr>
+          <tr><td>mh_cart</td><td>metalholic.fest</td><td>Ticket basket state</td><td>30 days</td><td>Strictly necessary</td></tr>
+          <tr><td>mh_consent</td><td>metalholic.fest</td><td>Records your cookie preferences</td><td>12 months</td><td>Strictly necessary</td></tr>
+          <tr><td>mh_lang</td><td>metalholic.fest</td><td>Preferred interface language</td><td>12 months</td><td>Functional</td></tr>
+          <tr><td>mh_theme</td><td>metalholic.fest</td><td>Light / dark preference</td><td>12 months</td><td>Functional</td></tr>
+          <tr><td>plausible_id</td><td>plausible.io (EU)</td><td>Anonymous, aggregated analytics</td><td>24 hours</td><td>Analytical</td></tr>
+          <tr><td>mh_forum_uid</td><td>metalholic.fest</td><td>Forum login persistence</td><td>30 days</td><td>Functional</td></tr>
+          <tr><td>mh_forum_seen</td><td>metalholic.fest</td><td>Forum "read" markers</td><td>30 days</td><td>Functional</td></tr>
+        </tbody>
+      </table>
+
+      <h2 id="consent">4 — Your consent</h2>
+      <p>On your first visit, a banner asks you to accept, refuse or configure non-essential cookies. Strictly necessary cookies are set in any case, as permitted by Article 5(3) of Directive 2002/58/EC.</p>
+      <p>You may change your consent at any time by clicking the <em>"Cookie preferences"</em> link in the footer or by clearing the <code>mh_consent</code> cookie in your browser.</p>
+
+      <h2 id="manage">5 — Managing &amp; deleting cookies</h2>
+      <p>Most browsers let you view, manage, refuse and delete cookies. Refusing strictly-necessary cookies will degrade the website (you may not be able to purchase tickets, post on the forum or stay logged in).</p>
+      <ul>
+        <li>Firefox — Preferences → Privacy &amp; Security → Cookies and Site Data</li>
+        <li>Chrome — Settings → Privacy and security → Cookies and other site data</li>
+        <li>Safari — Settings → Privacy → Manage Website Data</li>
+        <li>Edge — Settings → Cookies and site permissions → Cookies</li>
+      </ul>
+
+      <h2 id="third">6 — Third-party services</h2>
+      <p>Embedded video, payment processing and ticket fulfilment may set their own cookies if you choose to use those services. The relevant providers are listed on the <a href="privacy.html" style="color: var(--c-red-bright); border-bottom: 1px dotted var(--c-red);">Privacy Policy</a> page, together with their data-protection contacts.</p>
+
+      <h2 id="changes">7 — Changes to this policy</h2>
+      <p>This policy may be updated to reflect changes in the website, the festival, or applicable law. Material changes will be communicated via a notice on the home page for at least fifteen (15) days. The most recent version is always available at this URL.</p>
+    </article>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-mark">METALHOLIC ★ RED SQUARE 2026</div>
+    <div class="footer-top">
+      <div class="footer-column"><h4>Festival</h4><a href="index.html">Home</a><a href="lineup.html">Lineup</a><a href="tours.html">Tours</a><a href="tickets.html">Tickets</a></div>
+      <div class="footer-column"><h4>Community</h4><a href="forum.html">Forum</a><a href="press.html">Press</a><a href="about.html">Mi MetalHolic</a><a href="contact.html">Contact</a></div>
+      <div class="footer-column"><h4>Legal</h4><a href="legal-notice.html">Legal Notice</a><a href="cookies.html">Cookies Policy</a><a href="privacy.html">Privacy Policy</a></div>
+      <div class="footer-column"><h4>Sponsors</h4>
+        <div class="sponsors">
+          <img src="assets/sponsors/sts.svg" alt="STS"><img src="assets/sponsors/mts.svg" alt="MTS">
+          <img src="assets/sponsors/sber.svg" alt="Sber"><img src="assets/sponsors/yandex.svg" alt="Yandex">
+          <img src="assets/sponsors/ultra.svg" alt="Ultra"><img src="assets/sponsors/tcl.svg" alt="TCL">
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 MetalHolic Festival — Red Square Edition</span>
+      <span>Moscow ★ 14 — 16.08.2026</span>
+    </div>
+  </div>
+</footer>
+<script src="main.js"></script>
 </body>
 </html>

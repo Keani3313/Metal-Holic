@@ -2,37 +2,143 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Tickets - MetalHolic</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tickets — MetalHolic Festival</title>
+<meta name="description" content="MetalHolic Festival 2026 tickets — General Pass, Day Pass, Red Zone, Crew Pass.">
+<link rel="icon" href="assets/logo/logo.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styles.css">
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;700&family=Instrument+Serif&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
 <header class="header">
   <a href="index.html" class="logo">
-    <img src="assets/logo/logo.svg">
+    <img src="assets/logo/logo.svg" alt="MetalHolic Festival">
+    <span class="logo-word">MetalHolic</span>
   </a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Open menu">≡</button>
+  <nav class="nav" id="navMenu">
+    <a href="lineup.html">Lineup</a>
+    <a href="tours.html">Tours</a>
+    <a href="forum.html">Forum</a>
+    <a href="press.html">Press</a>
+    <a href="about.html">Mi MetalHolic</a>
+    <a href="contact.html">Contact</a>
+    <a href="tickets.html" class="ticket-btn">Tickets</a>
+  </nav>
 </header>
 
-<section class="lineup-preview">
-
-<h2>TICKETS</h2>
-
-<p class="serif capitular">
-MetalHolic operates as a limited-capacity cultural event in Red Square. Tickets are not only access passes but temporal entries into a structured three-day sonic environment.
-</p>
-
-<h3>GENERAL PASS</h3>
-<p class="serif">Access to all 3 days + all stages + night sessions.</p>
-
-<h3>DAY PASS</h3>
-<p class="serif">Access to one selected festival day.</p>
-
-<h3>VIP RED ZONE</h3>
-<p class="serif">Priority entry, elevated viewing platforms, backstage museum access.</p>
-
+<section class="page-head">
+  <div class="container">
+    <div class="crumbs">Index / Tickets — Edition III</div>
+    <h1>Access<br><span class="accent">Tiers</span></h1>
+    <p class="lede">MetalHolic operates as a limited-capacity cultural event. A ticket is not only entry — it is a temporal pass into a structured three-day sonic environment. Capacity is fixed at 32 000. There will be no queue extensions.</p>
+  </div>
 </section>
 
+<section class="section section--brown">
+  <div class="container">
+    <div class="grid-4">
+
+      <article class="ticket-card">
+        <span class="eyebrow">Tier 01</span>
+        <h3 class="ticket-name">Day Pass</h3>
+        <div class="ticket-price"><span class="cur">€</span>89</div>
+        <div class="card-meta">Per single day</div>
+        <ul>
+          <li>Access to one selected day</li>
+          <li>All stages on that day</li>
+          <li>Festival programme zine</li>
+          <li>No re-entry</li>
+        </ul>
+        <a href="#purchase" class="btn btn-outline">Select day</a>
+      </article>
+
+      <article class="ticket-card featured">
+        <span class="eyebrow" style="color: var(--c-paper);">Tier 02 · Most chosen</span>
+        <h3 class="ticket-name">General Pass</h3>
+        <div class="ticket-price"><span class="cur">€</span>219</div>
+        <div class="card-meta">Three full days</div>
+        <ul>
+          <li>All three days, all stages</li>
+          <li>Night Sessions until dawn</li>
+          <li>Festival programme zine</li>
+          <li>Access to the Press &amp; Archive room</li>
+          <li>Re-entry permitted</li>
+        </ul>
+        <a href="#purchase" class="btn">Buy general pass</a>
+      </article>
+
+      <article class="ticket-card">
+        <span class="eyebrow">Tier 03</span>
+        <h3 class="ticket-name">Red Zone VIP</h3>
+        <div class="ticket-price"><span class="cur">€</span>489</div>
+        <div class="card-meta">Three days, elevated access</div>
+        <ul>
+          <li>Priority entry, dedicated gate</li>
+          <li>Elevated viewing platforms</li>
+          <li>Backstage Museum access</li>
+          <li>Catering &amp; cloakroom</li>
+          <li>Limited-edition print poster</li>
+        </ul>
+        <a href="#purchase" class="btn btn-outline">Reserve red zone</a>
+      </article>
+
+      <article class="ticket-card">
+        <span class="eyebrow">Tier 04 · Industry</span>
+        <h3 class="ticket-name">Crew Pass</h3>
+        <div class="ticket-price"><span class="cur">€</span>0</div>
+        <div class="card-meta">Press, labels, festivals — by application</div>
+        <ul>
+          <li>Three days, accreditation only</li>
+          <li>Access to the Press &amp; Archive room</li>
+          <li>Curated meet-and-greet schedule</li>
+          <li>Subject to verification</li>
+        </ul>
+        <a href="press.html" class="btn btn-outline">Apply via press</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="section section--brown-deep" id="purchase">
+  <div class="container editorial">
+    <div class="editorial-title">
+      <span class="eyebrow">Conditions</span>
+      <h2>Read before you <span class="accent">enter the queue.</span></h2>
+    </div>
+    <div class="editorial-body">
+      <p class="serif">Tickets are nominal. The name on the ticket must match a valid government-issued ID at the gate. One ticket per person. Re-sale is permitted only through the official MetalHolic resale platform; tickets sold through third parties may be voided without refund.</p>
+      <p class="serif">Refunds are issued only in the event of full-festival cancellation. Schedule modifications, single-artist cancellations, weather conditions or partial line-up changes do not constitute grounds for refund. Children under 14 enter free with an accompanying adult holding a General Pass.</p>
+      <p class="serif">For accessible-access requests, group bookings or formal industry accreditation, contact <a href="mailto:tickets@metalholic.fest" style="color: var(--c-red-bright); border-bottom: 1px dotted var(--c-red);">tickets@metalholic.fest</a>.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-mark">METALHOLIC ★ RED SQUARE 2026</div>
+    <div class="footer-top">
+      <div class="footer-column"><h4>Festival</h4><a href="index.html">Home</a><a href="lineup.html">Lineup</a><a href="tours.html">Tours</a><a href="tickets.html">Tickets</a></div>
+      <div class="footer-column"><h4>Community</h4><a href="forum.html">Forum</a><a href="press.html">Press</a><a href="about.html">Mi MetalHolic</a><a href="contact.html">Contact</a></div>
+      <div class="footer-column"><h4>Legal</h4><a href="legal-notice.html">Legal Notice</a><a href="cookies.html">Cookies Policy</a><a href="privacy.html">Privacy Policy</a></div>
+      <div class="footer-column"><h4>Sponsors</h4>
+        <div class="sponsors">
+          <img src="assets/sponsors/sts.svg" alt="STS"><img src="assets/sponsors/mts.svg" alt="MTS">
+          <img src="assets/sponsors/sber.svg" alt="Sber"><img src="assets/sponsors/yandex.svg" alt="Yandex">
+          <img src="assets/sponsors/ultra.svg" alt="Ultra"><img src="assets/sponsors/tcl.svg" alt="TCL">
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 MetalHolic Festival — Red Square Edition</span>
+      <span>Moscow ★ 14 — 16.08.2026</span>
+    </div>
+  </div>
+</footer>
+<script src="main.js"></script>
 </body>
 </html>

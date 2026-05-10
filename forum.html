@@ -2,44 +2,313 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Forum - MetalHolic</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forum — MetalHolic Festival</title>
+<meta name="description" content="The MetalHolic Forum — a phpBB-style underground archive of festival discussion.">
+<link rel="icon" href="assets/logo/logo.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styles.css">
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;700&family=Instrument+Serif&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
 <header class="header">
   <a href="index.html" class="logo">
-    <img src="assets/logo/logo.svg">
+    <img src="assets/logo/logo.svg" alt="MetalHolic Festival">
+    <span class="logo-word">MetalHolic</span>
   </a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Open menu">≡</button>
+  <nav class="nav" id="navMenu">
+    <a href="lineup.html">Lineup</a>
+    <a href="tours.html">Tours</a>
+    <a href="forum.html">Forum</a>
+    <a href="press.html">Press</a>
+    <a href="about.html">Mi MetalHolic</a>
+    <a href="contact.html">Contact</a>
+    <a href="tickets.html" class="ticket-btn">Tickets</a>
+  </nav>
 </header>
 
-<section class="lineup-preview serif">
-
-<h2>METALHOLIC FORUM</h2>
-
-<p class="capitular">
-The MetalHolic Forum is a digital extension of the festival space where visitors exchange ideas, experiences, and interpretations of the event. It functions as a living archive of audience perception.
-</p>
-
-<h3>CATEGORIES</h3>
-
-<ul>
-<li>Festival 2026 Discussion</li>
-<li>Lineup & Predictions</li>
-<li>Tickets & Travel</li>
-<li>Live Experience Reports</li>
-<li>General Off Topic</li>
-</ul>
-
-<h3>RULES</h3>
-
-<p>
-Respectful communication is required. Harassment, hate speech, or disruptive behavior is not tolerated. This space is designed for discussion, not conflict.
-</p>
-
+<section class="page-head">
+  <div class="container">
+    <div class="crumbs">Index / Forum / Board</div>
+    <h1>The<br><span class="accent">Forum</span></h1>
+    <p class="lede">A digital extension of the festival space. Visitors exchange ideas, experiences and interpretations of the event. The forum functions as a living archive of audience perception — written in the spirit of the early-internet bulletin boards we never quite let go of.</p>
+  </div>
 </section>
 
+<section class="forum-wrap">
+  <div class="container">
+
+    <div class="forum-bar">
+      <div class="login-strip">
+        Logged in as <a href="#">Guest_82</a> ·
+        <a href="#">Login</a> ·
+        <a href="#">Register</a> ·
+        <a href="#">Search</a> ·
+        <a href="#">Members (12 408)</a>
+      </div>
+      <a href="#" class="btn btn-outline">+ New thread</a>
+    </div>
+
+    <div class="forum-stats">
+      <div class="forum-stat"><span class="num">12 408</span><span class="label">Members</span></div>
+      <div class="forum-stat"><span class="num">3 219</span><span class="label">Threads</span></div>
+      <div class="forum-stat"><span class="num">48 612</span><span class="label">Posts</span></div>
+      <div class="forum-stat"><span class="num">487</span><span class="label">Online now</span></div>
+    </div>
+
+    <!-- Category 1 -->
+    <div class="forum-cat">
+      <div class="forum-cat-header">
+        <h3>★ Festival 2026 — Red Square Edition</h3>
+        <span class="cat-meta">14 — 16.08.2026 · Moscow</span>
+      </div>
+      <div class="forum-row">
+        <div class="icon hot">!!</div>
+        <div>
+          <div class="topic-title">Megathread: Day-by-day live notes (post here during the festival)</div>
+          <div class="topic-desc">Pinned by moderator · 312 pages · last bumped 4 minutes ago</div>
+        </div>
+        <div class="num">312<small>Pages</small></div>
+        <div class="num">9 814<small>Replies</small></div>
+        <div class="last-post"><strong>moderator_kira</strong>4 min ago<br>"the marquee is <em>real</em>"</div>
+      </div>
+      <div class="forum-row">
+        <div class="icon">★</div>
+        <div>
+          <div class="topic-title">Stage maps + bag policy + transport from city centre</div>
+          <div class="topic-desc">Compiled FAQ, kept up to date by staff</div>
+        </div>
+        <div class="num">14<small>Pages</small></div>
+        <div class="num">512<small>Replies</small></div>
+        <div class="last-post"><strong>staff_ivan</strong>2 h ago<br>updated entry C</div>
+      </div>
+      <div class="forum-row">
+        <div class="icon">?</div>
+        <div>
+          <div class="topic-title">First-timers: what should I bring? earplugs? a heart?</div>
+          <div class="topic-desc">soft thread, please be kind</div>
+        </div>
+        <div class="num">22<small>Pages</small></div>
+        <div class="num">741<small>Replies</small></div>
+        <div class="last-post"><strong>doomgirl_82</strong>27 min ago<br>"bring your friend's friend"</div>
+      </div>
+      <div class="forum-row">
+        <div class="icon">▣</div>
+        <div>
+          <div class="topic-title">Press &amp; Archive room — visitor reports</div>
+          <div class="topic-desc">For attendees with General + access</div>
+        </div>
+        <div class="num">6<small>Pages</small></div>
+        <div class="num">183<small>Replies</small></div>
+        <div class="last-post"><strong>archive_fan</strong>1 h ago<br>"found a 1996 zine"</div>
+      </div>
+    </div>
+
+    <!-- Category 2 -->
+    <div class="forum-cat">
+      <div class="forum-cat-header">
+        <h3>★ Lineup &amp; Predictions</h3>
+        <span class="cat-meta">Discussion · curated · respectful</span>
+      </div>
+      <div class="forum-row">
+        <div class="icon">♟</div>
+        <div>
+          <div class="topic-title">Sunn O))) at 02:30 — physical preparation thread</div>
+          <div class="topic-desc">earplugs, hydration, layers. seriously.</div>
+        </div>
+        <div class="num">9<small>Pages</small></div>
+        <div class="num">281<small>Replies</small></div>
+        <div class="last-post"><strong>lowend_lvr</strong>3 h ago<br>"8 layers minimum"</div>
+      </div>
+      <div class="forum-row">
+        <div class="icon">▲</div>
+        <div>
+          <div class="topic-title">Why is Tool closing Day 3 instead of Day 1?</div>
+          <div class="topic-desc">curatorial argument inside, please read before posting</div>
+        </div>
+        <div class="num">17<small>Pages</small></div>
+        <div class="num">602<small>Replies</small></div>
+        <div class="last-post"><strong>maybe_hum</strong>40 min ago<br>"because legacy"</div>
+      </div>
+      <div class="forum-row">
+        <div class="icon">♢</div>
+        <div>
+          <div class="topic-title">Hidden b-stage rumors — drone act after 03:00?</div>
+          <div class="topic-desc">unconfirmed</div>
+        </div>
+        <div class="num">5<small>Pages</small></div>
+        <div class="num">98<small>Replies</small></div>
+        <div class="last-post"><strong>arch1ve</strong>5 h ago<br>"be quiet about it"</div>
+      </div>
+    </div>
+
+    <!-- Category 3 -->
+    <div class="forum-cat">
+      <div class="forum-cat-header">
+        <h3>★ Tickets, Travel &amp; Accommodation</h3>
+        <span class="cat-meta">Useful, practical, not for re-sale</span>
+      </div>
+      <div class="forum-row">
+        <div class="icon">⌂</div>
+        <div>
+          <div class="topic-title">Hostels &amp; flatshares within 30 min walk</div>
+          <div class="topic-desc">no commercial links, no re-sale</div>
+        </div>
+        <div class="num">8<small>Pages</small></div>
+        <div class="num">241<small>Replies</small></div>
+        <div class="last-post"><strong>nomad_mira</strong>11 min ago<br>"Kitay-Gorod is fine"</div>
+      </div>
+      <div class="forum-row">
+        <div class="icon">✈</div>
+        <div>
+          <div class="topic-title">Flying in: cheap routes, worst layovers, war stories</div>
+          <div class="topic-desc">share, don't sell</div>
+        </div>
+        <div class="num">11<small>Pages</small></div>
+        <div class="num">389<small>Replies</small></div>
+        <div class="last-post"><strong>airless_ben</strong>25 min ago<br>"Belgrade hop again"</div>
+      </div>
+    </div>
+
+    <!-- Category 4 -->
+    <div class="forum-cat">
+      <div class="forum-cat-header">
+        <h3>★ Live Reports &amp; Field Recordings</h3>
+        <span class="cat-meta">Audio archive — uploads only via official link</span>
+      </div>
+      <div class="forum-row">
+        <div class="icon">◉</div>
+        <div>
+          <div class="topic-title">Edition II — Industrial Pavilion full set re-uploads</div>
+          <div class="topic-desc">last year's archive, mirror links, rotting links report</div>
+        </div>
+        <div class="num">21<small>Pages</small></div>
+        <div class="num">784<small>Replies</small></div>
+        <div class="last-post"><strong>m1rror</strong>1 h ago<br>"link 14 dead"</div>
+      </div>
+      <div class="forum-row">
+        <div class="icon">▢</div>
+        <div>
+          <div class="topic-title">Field recording sharing — 24-hour window post-event only</div>
+          <div class="topic-desc">policy thread · please read before uploading</div>
+        </div>
+        <div class="num">3<small>Pages</small></div>
+        <div class="num">62<small>Replies</small></div>
+        <div class="last-post"><strong>moderator_kira</strong>2 days ago<br>"keep it 24h"</div>
+      </div>
+    </div>
+
+    <!-- Category 5 -->
+    <div class="forum-cat">
+      <div class="forum-cat-header">
+        <h3>★ Off-topic / Lounge</h3>
+        <span class="cat-meta">Slow burn · no genre wars · no harassment</span>
+      </div>
+      <div class="forum-row">
+        <div class="icon">☕</div>
+        <div>
+          <div class="topic-title">Songs that ruined your year. (a thread.)</div>
+          <div class="topic-desc">soft, long thread, please don't argue</div>
+        </div>
+        <div class="num">38<small>Pages</small></div>
+        <div class="num">1 412<small>Replies</small></div>
+        <div class="last-post"><strong>quiet_part</strong>9 min ago<br>"that one Failure b-side"</div>
+      </div>
+      <div class="forum-row">
+        <div class="icon">✎</div>
+        <div>
+          <div class="topic-title">Zine swap — physical mail only</div>
+          <div class="topic-desc">trade addresses via DM, no commercial</div>
+        </div>
+        <div class="num">7<small>Pages</small></div>
+        <div class="num">204<small>Replies</small></div>
+        <div class="last-post"><strong>print_only</strong>4 h ago<br>"3 copies left"</div>
+      </div>
+    </div>
+
+    <!-- Featured thread preview -->
+    <span class="eyebrow" style="margin-top: 30px; display:inline-block;">Thread preview · pinned</span>
+    <h2 style="margin: 12px 0 18px;">Megathread → opening post</h2>
+    <article class="thread-preview">
+      <div class="thread-post">
+        <aside class="thread-author">
+          <div class="avatar">K</div>
+          <div class="username">moderator_kira</div>
+          <div class="rank">Festival Crew</div>
+          <div class="joined">Joined 2024<br>Posts 4 217</div>
+        </aside>
+        <div class="thread-body">
+          <div class="post-meta">Posted 14.08.2026 — 14:02 · Subject: <em>Day-by-day live notes</em></div>
+          <p>Welcome back. This is the only official live thread for the 2026 edition. Please post short observations from the floor — no setlists, no recordings, no spoilers from artists who haven't played yet.</p>
+          <p>The granite holds heat. The square is louder than you remember. Be kind to first-timers and to security; they are tired before you arrive.</p>
+          <p>★ Sticky rules: <em>no personal attacks · no resale links · no recorded material · respect the silence between sets — it is composed, not accidental.</em></p>
+        </div>
+      </div>
+      <div class="thread-post" style="border-top: 1px solid var(--c-line);">
+        <aside class="thread-author">
+          <div class="avatar">D</div>
+          <div class="username">doomgirl_82</div>
+          <div class="rank">Active member</div>
+          <div class="joined">Joined 2025<br>Posts 318</div>
+        </aside>
+        <div class="thread-body">
+          <div class="post-meta">Posted 14.08.2026 — 14:31 · Subject: <em>Re: Day-by-day live notes</em></div>
+          <p>arrived at gate B at 14:00. they let us in at 14:18. the sound check from the Atmosphere stage already sounds like a mistake on purpose. this is going to be a long, beautiful three days. see you on the marble.</p>
+          <p>★ also — the marquee is real, the marquee is moving, and i love that.</p>
+        </div>
+      </div>
+    </article>
+
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px; margin-top: 20px;">
+      <span class="login-strip" style="font-family: var(--f-display); font-size:11px; letter-spacing:0.22em; color: var(--c-text-dim); text-transform:uppercase;">Page 1 of 312</span>
+      <div>
+        <a href="#" class="btn btn-outline">+ Reply</a>
+        <a href="#" class="btn btn-ghost">Subscribe</a>
+      </div>
+    </div>
+
+    <div class="rule thick"></div>
+
+    <div class="grid-2">
+      <div>
+        <span class="eyebrow">Forum rules</span>
+        <h3 style="margin-top: 8px;">Read before posting</h3>
+        <p class="serif" style="margin-top: 10px;">Respectful communication is required. Harassment, hate speech and disruptive behaviour are not tolerated. The MetalHolic Forum is a space for discussion, not for conflict. Moderators reserve the right to remove posts and accounts at their discretion.</p>
+      </div>
+      <div>
+        <span class="eyebrow">Quoting style</span>
+        <h3 style="margin-top: 8px;">An archive, not a feed</h3>
+        <p class="serif" style="margin-top: 10px;">Threads are kept long and slow on purpose. Quote sparingly. Edit yourself before you post. Long-form replies are welcome. Posting in capital letters is reserved for set times and titles only.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-mark">METALHOLIC ★ RED SQUARE 2026</div>
+    <div class="footer-top">
+      <div class="footer-column"><h4>Festival</h4><a href="index.html">Home</a><a href="lineup.html">Lineup</a><a href="tours.html">Tours</a><a href="tickets.html">Tickets</a></div>
+      <div class="footer-column"><h4>Community</h4><a href="forum.html">Forum</a><a href="press.html">Press</a><a href="about.html">Mi MetalHolic</a><a href="contact.html">Contact</a></div>
+      <div class="footer-column"><h4>Legal</h4><a href="legal-notice.html">Legal Notice</a><a href="cookies.html">Cookies Policy</a><a href="privacy.html">Privacy Policy</a></div>
+      <div class="footer-column"><h4>Sponsors</h4>
+        <div class="sponsors">
+          <img src="assets/sponsors/sts.svg" alt="STS"><img src="assets/sponsors/mts.svg" alt="MTS">
+          <img src="assets/sponsors/sber.svg" alt="Sber"><img src="assets/sponsors/yandex.svg" alt="Yandex">
+          <img src="assets/sponsors/ultra.svg" alt="Ultra"><img src="assets/sponsors/tcl.svg" alt="TCL">
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 MetalHolic Festival — Red Square Edition</span>
+      <span>Moscow ★ 14 — 16.08.2026</span>
+    </div>
+  </div>
+</footer>
+<script src="main.js"></script>
 </body>
 </html>
