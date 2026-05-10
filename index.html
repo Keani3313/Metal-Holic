@@ -4,141 +4,215 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MetalHolic Festival — Red Square Edition</title>
+<meta name="description" content="MetalHolic Festival — Red Square Edition. A three-day emotional architecture of underground metal in the heart of Moscow, 14—16 August 2026.">
+<link rel="icon" href="assets/logo/logo.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styles.css">
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;700&family=Rock+Salt&family=Instrument+Serif&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;700&family=Instrument+Serif&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<!-- HEADER / NAVIGATION -->
 <header class="header">
   <a href="index.html" class="logo">
-    <img src="assets/logo.svg" alt="MetalHolic Festival">
+    <img src="assets/logo/logo.svg" alt="MetalHolic Festival">
+    <span class="logo-word">MetalHolic</span>
   </a>
-
-  <button class="menu-toggle" id="menuToggle">☰</button>
-
+  <button class="menu-toggle" id="menuToggle" aria-label="Open menu">≡</button>
   <nav class="nav" id="navMenu">
     <a href="lineup.html">Lineup</a>
     <a href="tours.html">Tours</a>
-    <a href="about.html">Mi MetalHolic</a>
+    <a href="forum.html">Forum</a>
     <a href="press.html">Press</a>
+    <a href="about.html">Mi MetalHolic</a>
+    <a href="contact.html">Contact</a>
     <a href="tickets.html" class="ticket-btn">Tickets</a>
   </nav>
 </header>
 
-<!-- HERO SECTION -->
 <section class="hero">
+  <img src="assets/images/hero.jpg" alt="MetalHolic Festival — Red Square Edition">
   <div class="hero-overlay"></div>
-  <img src="assets/images/hero.jpg" alt="MetalHolic Festival Red Square Edition">
+
+  <div class="hero-meta">
+    <strong>Edition III</strong>
+    Moscow · Red Square<br>
+    14 — 16 August 2026
+  </div>
 
   <div class="hero-text">
-    <h1>METALHOLIC</h1>
-    <p>Red Square Edition — Emotion, Noise, Identity</p>
+    <h1>METAL<em>HOLIC</em></h1>
+    <p>A three-day emotional architecture of underground metal beneath the monuments of Red Square. Atmosphere. Chaos. Legacy.</p>
   </div>
 </section>
 
-<!-- LIVE / UPCOMING SECTION -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Deftones</span><span>Failure</span><span>Hum</span><span>Slipknot</span><span>Meshuggah</span><span>Converge</span><span>Tool</span><span>Swans</span><span>Code Orange</span><span>Cloakroom</span><span>Deftones</span><span>Failure</span><span>Hum</span><span>Slipknot</span><span>Meshuggah</span><span>Converge</span><span>Tool</span><span>Swans</span><span>Code Orange</span><span>Cloakroom</span>
+  </div>
+</div>
+
+<section class="section section--paper">
+  <div class="container editorial">
+    <div class="editorial-title">
+      <span class="eyebrow">Doctrine I — Ø</span>
+      <h2>Sound is <span class="accent">architecture</span> the body remembers.</h2>
+    </div>
+    <div class="editorial-body capitular">
+      <p>MetalHolic is constructed as a three-day emotional architecture inside Red Square. Each day represents a measured shift in intensity — from atmosphere, through chaos, into reflection. This is not entertainment. It is documentation of emotional and spatial states through sound.</p>
+      <p>For its third edition the festival expands its archive into the monumental gravity of central Moscow. The granite is the stage. The crowd is the chorus. The history is the distortion already in the air.</p>
+      <a href="about.html" class="btn btn-outline">Read the manifesto</a>
+    </div>
+  </div>
+</section>
+
 <section class="live">
-  <h2>NOW / UPCOMING</h2>
-
-  <div class="live-grid">
-    <div class="live-card">
-      <div class="live-tag">LIVE</div>
-      <h3>Deftones</h3>
-      <p>Main Stage • Red Square</p>
-    </div>
-
-    <div class="live-card">
-      <div class="live-tag">NEXT</div>
-      <h3>Failure</h3>
-      <p>Atmosphere Stage</p>
-    </div>
-
-    <div class="live-card">
-      <div class="live-tag">SOON</div>
-      <h3>Hum</h3>
-      <p>Night Session</p>
-    </div>
-  </div>
-</section>
-
-<!-- FESTIVAL CONCEPT BANNER -->
-<section class="banner">
-  <div class="banner-box"></div>
-
-  <div class="banner-text serif capitular">
-    The MetalHolic Festival is constructed as a three-day emotional architecture inside Red Square. Each day represents a shift in intensity, from atmosphere to chaos to reflection. This is not entertainment—it is documentation of emotional and spatial states through sound.
-  </div>
-</section>
-
-<!-- LINEUP PREVIEW -->
-<section class="lineup-preview">
-  <h2>DAY 1 — EMOTIONAL / ATMOSPHERE</h2>
-
-  <p class="serif capitular">
-    The opening day focuses on emotional density and atmospheric distortion. Sound is slow, immersive, and deeply layered. Internal noise becomes external architecture. This is the foundation—the emotional descent begins.
-  </p>
-
-  <div class="artists">
-    <span>Deftones</span>
-    <span>Failure</span>
-    <span>Hum</span>
-    <span>Nothing</span>
-    <span>Cloakroom</span>
-  </div>
-
-  <h3>Explore Full Lineup</h3>
-  <p class="serif">
-    MetalHolic spans three distinct sonic environments, each designed as a conceptual journey through metal's emotional spectrum. From nu-metal's atmospheric origins to industrial chaos to post-metal reflection.
-  </p>
-  <a href="lineup.html" class="btn">View All Days</a>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-top">
-    <div class="footer-column">
-      <h4>Festival</h4>
-      <a href="lineup.html">Lineup</a>
-      <a href="tours.html">Tours</a>
-      <a href="tickets.html">Tickets</a>
-      <a href="about.html">About</a>
-    </div>
-
-    <div class="footer-column">
-      <h4>Info</h4>
-      <a href="forum.html">Forum</a>
-      <a href="press.html">Press</a>
-      <a href="contact.html">Contact</a>
-    </div>
-
-    <div class="footer-column">
-      <h4>Legal</h4>
-      <a href="legal-notice.html">Legal Notice</a>
-      <a href="cookies.html">Cookies Policy</a>
-      <a href="privacy.html">Privacy</a>
-    </div>
-
-    <div class="footer-column">
-      <h4>Sponsors</h4>
-      <div class="sponsors">
-        <img src="assets/sponsors/sts.svg" alt="Sponsor" />
-        <img src="assets/sponsors/mts.svg" alt="Sponsor" />
-        <img src="assets/sponsors/sber.svg" alt="Sponsor" />
-        <img src="assets/sponsors/yandex.svg" alt="Sponsor" />
-        <img src="assets/sponsors/ultra.svg" alt="Sponsor" />
-        <img src="assets/sponsors/tcl.svg" alt="Sponsor" />
+  <div class="container">
+    <span class="eyebrow">Stage report</span>
+    <h2>Now &nbsp;/ &nbsp;Upcoming</h2>
+    <div class="live-grid">
+      <div class="live-card">
+        <span class="live-tag">Live · Day 1</span>
+        <h3>Deftones</h3>
+        <p>Main Stage · Red Square · 22:30</p>
+      </div>
+      <div class="live-card">
+        <span class="live-tag">Next · Day 1</span>
+        <h3>Failure</h3>
+        <p>Atmosphere Stage · 23:45</p>
+      </div>
+      <div class="live-card">
+        <span class="live-tag">Soon · Day 1</span>
+        <h3>Hum</h3>
+        <p>Night Session · 01:30</p>
+      </div>
+      <div class="live-card">
+        <span class="live-tag">Day 2</span>
+        <h3>Meshuggah</h3>
+        <p>Chaos Stage · 21:00</p>
+      </div>
+      <div class="live-card">
+        <span class="live-tag">Day 2</span>
+        <h3>Converge</h3>
+        <p>Industrial Pavilion · 22:30</p>
+      </div>
+      <div class="live-card">
+        <span class="live-tag">Day 3</span>
+        <h3>Swans</h3>
+        <p>Legacy Stage · 23:00</p>
       </div>
     </div>
   </div>
+</section>
 
-  <div class="footer-bottom">
-    MetalHolic Festival — Red Square Edition © 2026
+<section class="section section--brown">
+  <div class="container">
+    <span class="eyebrow">Lineup preview</span>
+    <h2 style="font-size:clamp(48px,8vw,120px); color:var(--c-paper); margin: 12px 0 40px;">Three days. Three states of being.</h2>
+
+    <div class="day-header">
+      <span class="day-num">01</span>
+      <h2>Atmosphere<span class="sub">Emotional / atmospheric metal</span></h2>
+      <span class="day-stage">14.08 · Red Square Main</span>
+    </div>
+    <div class="day-body">
+      <p class="day-text serif capitular">The opening day is a slow descent — internal noise becoming external architecture. Volume is not the point. Tension, density, atmospheric distortion are. The descent begins here.</p>
+      <div class="artists-list">
+        <div class="artist-card"><span class="name">Deftones</span><span class="meta">22:30 · Main</span></div>
+        <div class="artist-card"><span class="name">Failure</span><span class="meta">23:45 · Atmosphere</span></div>
+        <div class="artist-card"><span class="name">Hum</span><span class="meta">01:30 · Night</span></div>
+        <div class="artist-card"><span class="name">Nothing</span><span class="meta">20:30 · Atmosphere</span></div>
+        <div class="artist-card"><span class="name">Cloakroom</span><span class="meta">19:00 · Atmosphere</span></div>
+        <div class="artist-card"><span class="name">Spotlights</span><span class="meta">18:00 · Atmosphere</span></div>
+      </div>
+    </div>
+
+    <div style="text-align:center; padding: 40px 0 20px;">
+      <a href="lineup.html" class="btn">Open the full lineup</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--brown-deep">
+  <div class="container grid-3" style="align-items:start;">
+    <div>
+      <span class="eyebrow">Doctrine II</span>
+      <h3 style="margin-top:8px;">A dystopian archive of sound</h3>
+      <p class="serif" style="margin-top:14px;">The festival is documented as a public archive. Recordings, posters, transcripts and obituaries are filed under each edition and made permanent in the MetalHolic Library.</p>
+    </div>
+    <div>
+      <span class="eyebrow">Doctrine III</span>
+      <h3 style="margin-top:8px;">No spectator, only witness</h3>
+      <p class="serif" style="margin-top:14px;">Capacity is limited and ticketed in three tiers. The crowd is treated as an instrument inside the spatial composition of the square — not as an audience.</p>
+    </div>
+    <div>
+      <span class="eyebrow">Doctrine IV</span>
+      <h3 style="margin-top:8px;">Three days, one continuous breath</h3>
+      <p class="serif" style="margin-top:14px;">Performances are programmed without pauses between stages. Sound bleeds from one act into the next; silence is composed, never accidental.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section tight section--paper">
+  <div class="container" style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:20px;">
+    <div>
+      <span class="eyebrow">Partners</span>
+      <h3 style="color:var(--c-bg); margin-top:8px;">Sponsors of the third edition</h3>
+    </div>
+    <div class="sponsors" style="filter:invert(1);">
+      <img src="assets/sponsors/sts.svg" alt="STS">
+      <img src="assets/sponsors/mts.svg" alt="MTS">
+      <img src="assets/sponsors/sber.svg" alt="Sber">
+      <img src="assets/sponsors/yandex.svg" alt="Yandex">
+      <img src="assets/sponsors/ultra.svg" alt="Ultra">
+      <img src="assets/sponsors/tcl.svg" alt="TCL">
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-mark">METALHOLIC ★ RED SQUARE 2026</div>
+    <div class="footer-top">
+      <div class="footer-column">
+        <h4>Festival</h4>
+        <a href="index.html">Home</a>
+        <a href="lineup.html">Lineup</a>
+        <a href="tours.html">Tours</a>
+        <a href="tickets.html">Tickets</a>
+      </div>
+      <div class="footer-column">
+        <h4>Community</h4>
+        <a href="forum.html">Forum</a>
+        <a href="press.html">Press</a>
+        <a href="about.html">Mi MetalHolic</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-column">
+        <h4>Legal</h4>
+        <a href="legal-notice.html">Legal Notice</a>
+        <a href="cookies.html">Cookies Policy</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+      <div class="footer-column">
+        <h4>Sponsors</h4>
+        <div class="sponsors">
+          <img src="assets/sponsors/sts.svg" alt="STS">
+          <img src="assets/sponsors/mts.svg" alt="MTS">
+          <img src="assets/sponsors/sber.svg" alt="Sber">
+          <img src="assets/sponsors/yandex.svg" alt="Yandex">
+          <img src="assets/sponsors/ultra.svg" alt="Ultra">
+          <img src="assets/sponsors/tcl.svg" alt="TCL">
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 MetalHolic Festival — Red Square Edition</span>
+      <span>Moscow ★ 14 — 16.08.2026</span>
+    </div>
   </div>
 </footer>
 
 <script src="main.js"></script>
-
 </body>
 </html>
