@@ -5,19 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lineup — MetalHolic Festival</title>
 <meta name="description" content="The MetalHolic 2026 lineup: three days, three states — Atmosphere, Chaos, Legacy.">
-<link rel="icon" href="assets/logo/logo.svg" type="image/svg+xml">
+<link rel="icon" href="assets/logo/SVG/MH_Regular.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;700&family=Barlow+Condensed:wght@300;400;500;700&family=Rock+Salt&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&family=Barlow+Condensed:wght@300;400;500;700&family=Rock+Salt&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header class="header">
-  <a href="index.html" class="logo">
-    <img src="assets/logo/logo.svg" alt="MetalHolic Festival">
-    <span class="logo-word">MetalHolic</span>
-  </a>
+  <div class="header-left">
+    <a class="logo" href="index.html">
+      <img src="assets/logo/SVG/Secondary_Horizontal.svg" alt="MetalHolic Festival">
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">Festival</button>
+  </div>
   <button class="menu-toggle" id="menuToggle" aria-label="Open menu">≡</button>
   <nav class="nav" id="navMenu">
     <a href="lineup.html">Lineup</a>
@@ -30,187 +32,54 @@
   </nav>
 </header>
 
+<div class="fullscreen-menu" id="fullscreenMenu">
+  <button class="fullscreen-close" id="fullscreenClose" aria-label="Close menu">✕</button>
+  <nav class="fullscreen-nav">
+    <div class="fs-category">
+      <span class="fs-cat-head"><span class="slash">/</span>Festival</span>
+      <div class="fs-cat-items">
+        <a href="index.html">Home</a>
+        <a href="lineup.html">Lineup</a>
+        <a href="tours.html">Tours</a>
+        <a href="tickets.html">Tickets</a>
+      </div>
+    </div>
+    <div class="fs-category">
+      <span class="fs-cat-head"><span class="slash">/</span>Community</span>
+      <div class="fs-cat-items">
+        <a href="forum.html">Forum</a>
+        <a href="press.html">Press</a>
+        <a href="about.html">Mi MetalHolic</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="fs-category">
+      <span class="fs-cat-head"><span class="slash">/</span>Legal</span>
+      <div class="fs-cat-items">
+        <a href="legal-notice.html">Legal Notice</a>
+        <a href="cookies.html">Cookies Policy</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </nav>
+  <div class="fullscreen-sponsors">
+    <span class="fullscreen-label">Partners</span>
+    <div class="sponsors">
+      <img src="assets/logo/BLANCO/SVG/STS_Blanco.svg" alt="STS">
+      <img src="assets/logo/BLANCO/SVG/MTS_Blanco.svg" alt="MTS">
+      <img src="assets/logo/BLANCO/SVG/SBER_Blanco.svg" alt="Sber">
+      <img src="assets/logo/BLANCO/SVG/YANDEX_Blanco.svg" alt="Yandex">
+      <img src="assets/logo/BLANCO/SVG/ULTRA_Blanco.svg" alt="Ultra">
+      <img src="assets/logo/BLANCO/SVG/TCL_Blanco.svg" alt="TCL">
+    </div>
+  </div>
+</div>
+
 <section class="page-head">
   <div class="container">
     <div class="crumbs">Index / Lineup 2026</div>
     <h1>Lineup<span class="accent-script" style="display:block; margin-top:18px">three days, three states</span></h1>
-    <p class="lede">Atmosphere on Thursday. Chaos on Friday. Legacy on Saturday. The lineup is programmed as one continuous emotional arc — from quiet density into nu-metal core, and finally into the records that shaped the whole vocabulary of alternative metal. Times are indicative and subject to last-minute curatorial drift.</p>
-  </div>
-</section>
-
-<section class="section tight section--brown-deep">
-  <div class="container">
-    <div class="chip-row" style="margin-bottom: 22px;">
-      <span style="font-family:var(--f-display); font-size:11px; letter-spacing:0.28em; text-transform:uppercase; color:var(--c-paper-dim); margin-right:6px;">Day</span>
-      <button class="filter-chip atmos is-active" type="button" data-day="1">Day 1 · Atmosphere</button>
-      <button class="filter-chip chaos" type="button" data-day="2">Day 2 · Chaos</button>
-      <button class="filter-chip legacy" type="button" data-day="3">Day 3 · Legacy</button>
-    </div>
-
-    <div class="timetable" id="timetable-day-1" data-day="1">
-      <div class="timetable-head">
-        <div class="hour-cell">Stage / Hour</div>
-        <div class="hour-cell">17:00</div><div class="hour-cell">18:00</div><div class="hour-cell">19:00</div><div class="hour-cell">20:00</div><div class="hour-cell">21:00</div><div class="hour-cell">22:00</div><div class="hour-cell">23:00</div><div class="hour-cell">00:00</div><div class="hour-cell">01:00</div><div class="hour-cell">02:00</div><div class="hour-cell">03:00</div><div class="hour-cell">04:00</div>
-      </div>
-      <div class="timetable-row">
-        <div class="stage-label">Main</div>
-        <div class="slot-area">
-          <div class="timetable-slot headline" style="left:45.83%; width:13.33%;">
-            <span class="slot-name">Deftones</span>
-            <span class="slot-time">22:30 – 24:00</span>
-          </div>
-        </div>
-      </div>
-      <div class="timetable-row">
-        <div class="stage-label">Atmosphere</div>
-        <div class="slot-area">
-          <div class="timetable-slot" style="left:0%; width:8.33%;">
-            <span class="slot-name">Superheaven</span>
-            <span class="slot-time">17:00 – 18:00</span>
-          </div>
-          <div class="timetable-slot" style="left:8.33%; width:8.33%;">
-            <span class="slot-name">Cloakroom</span>
-            <span class="slot-time">18:00 – 19:00</span>
-          </div>
-          <div class="timetable-slot" style="left:20.83%; width:8.33%;">
-            <span class="slot-name">Hum</span>
-            <span class="slot-time">19:30 – 20:30</span>
-          </div>
-          <div class="timetable-slot" style="left:33.33%; width:8.33%;">
-            <span class="slot-name">Failure</span>
-            <span class="slot-time">21:00 – 22:00</span>
-          </div>
-        </div>
-      </div>
-      <div class="timetable-row">
-        <div class="stage-label">Night Session</div>
-        <div class="slot-area">
-          <div class="timetable-slot" style="left:58.33%; width:8.33%;">
-            <span class="slot-name">Nothing</span>
-            <span class="slot-time">23:45 – 00:45</span>
-          </div>
-          <div class="timetable-slot" style="left:75%; width:8.33%;">
-            <span class="slot-name">Title Fight</span>
-            <span class="slot-time">01:30 – 02:30</span>
-          </div>
-        </div>
-      </div>
-      <div class="timetable-legend">
-        <span class="key"><span class="swatch headline"></span> Headline</span>
-        <span class="key"><span class="swatch"></span> Performance</span>
-        <span style="margin-left:auto;">Times indicative — subject to curatorial drift</span>
-      </div>
-    </div>
-
-    <div class="timetable" id="timetable-day-2" data-day="2" hidden>
-      <div class="timetable-head">
-        <div class="hour-cell">Stage / Hour</div>
-        <div class="hour-cell">17:00</div><div class="hour-cell">18:00</div><div class="hour-cell">19:00</div><div class="hour-cell">20:00</div><div class="hour-cell">21:00</div><div class="hour-cell">22:00</div><div class="hour-cell">23:00</div><div class="hour-cell">00:00</div><div class="hour-cell">01:00</div><div class="hour-cell">02:00</div><div class="hour-cell">03:00</div><div class="hour-cell">04:00</div>
-      </div>
-      <div class="timetable-row">
-        <div class="stage-label">Main</div>
-        <div class="slot-area">
-          <div class="timetable-slot headline" style="left:37.5%; width:12.5%;">
-            <span class="slot-name">Korn</span>
-            <span class="slot-time">21:30 – 23:00</span>
-          </div>
-          <div class="timetable-slot headline" style="left:54.17%; width:12.5%;">
-            <span class="slot-name">Slipknot</span>
-            <span class="slot-time">23:30 – 01:00</span>
-          </div>
-        </div>
-      </div>
-      <div class="timetable-row">
-        <div class="stage-label">Chaos Stage</div>
-        <div class="slot-area">
-          <div class="timetable-slot" style="left:0%; width:8.33%;">
-            <span class="slot-name">Hed PE</span>
-            <span class="slot-time">17:00 – 18:00</span>
-          </div>
-          <div class="timetable-slot" style="left:8.33%; width:8.33%;">
-            <span class="slot-name">Primer 55</span>
-            <span class="slot-time">18:00 – 19:00</span>
-          </div>
-          <div class="timetable-slot" style="left:20.83%; width:8.33%;">
-            <span class="slot-name">Spineshank</span>
-            <span class="slot-time">19:30 – 20:30</span>
-          </div>
-        </div>
-      </div>
-      <div class="timetable-row">
-        <div class="stage-label">Industrial Pavilion</div>
-        <div class="slot-area">
-          <div class="timetable-slot" style="left:66.66%; width:8.33%;">
-            <span class="slot-name">Dope</span>
-            <span class="slot-time">00:45 – 01:45</span>
-          </div>
-          <div class="timetable-slot" style="left:75%; width:8.33%;">
-            <span class="slot-name">40 Below Summer</span>
-            <span class="slot-time">02:00 – 03:00</span>
-          </div>
-        </div>
-      </div>
-      <div class="timetable-legend">
-        <span class="key"><span class="swatch headline"></span> Headline</span>
-        <span class="key"><span class="swatch"></span> Performance</span>
-        <span style="margin-left:auto;">Times indicative — subject to curatorial drift</span>
-      </div>
-    </div>
-
-    <div class="timetable" id="timetable-day-3" data-day="3" hidden>
-      <div class="timetable-head">
-        <div class="hour-cell">Stage / Hour</div>
-        <div class="hour-cell">17:00</div><div class="hour-cell">18:00</div><div class="hour-cell">19:00</div><div class="hour-cell">20:00</div><div class="hour-cell">21:00</div><div class="hour-cell">22:00</div><div class="hour-cell">23:00</div><div class="hour-cell">00:00</div><div class="hour-cell">01:00</div><div class="hour-cell">02:00</div><div class="hour-cell">03:00</div><div class="hour-cell">04:00</div>
-      </div>
-      <div class="timetable-row">
-        <div class="stage-label">Main</div>
-        <div class="slot-area">
-          <div class="timetable-slot" style="left:37.5%; width:12.5%;">
-            <span class="slot-name">Helmet</span>
-            <span class="slot-time">21:30 – 23:00</span>
-          </div>
-          <div class="timetable-slot headline" style="left:54.17%; width:12.5%;">
-            <span class="slot-name">Metallica</span>
-            <span class="slot-time">23:30 – 01:30</span>
-          </div>
-        </div>
-      </div>
-      <div class="timetable-row">
-        <div class="stage-label">Legacy</div>
-        <div class="slot-area">
-          <div class="timetable-slot" style="left:4.17%; width:8.33%;">
-            <span class="slot-name">Handsome</span>
-            <span class="slot-time">17:30 – 18:30</span>
-          </div>
-          <div class="timetable-slot" style="left:12.5%; width:8.33%;">
-            <span class="slot-name">Torche</span>
-            <span class="slot-time">18:30 – 19:30</span>
-          </div>
-          <div class="timetable-slot" style="left:20.83%; width:8.33%;">
-            <span class="slot-name">Quicksand</span>
-            <span class="slot-time">19:30 – 20:30</span>
-          </div>
-        </div>
-      </div>
-      <div class="timetable-row">
-        <div class="stage-label">Atmosphere</div>
-        <div class="slot-area">
-          <div class="timetable-slot" style="left:62.5%; width:8.33%;">
-            <span class="slot-name">Floor</span>
-            <span class="slot-time">00:30 – 01:30</span>
-          </div>
-          <div class="timetable-slot" style="left:75%; width:8.33%;">
-            <span class="slot-name">Spotlights</span>
-            <span class="slot-time">02:00 – 03:00</span>
-          </div>
-        </div>
-      </div>
-      <div class="timetable-legend">
-        <span class="key"><span class="swatch headline"></span> Headline</span>
-        <span class="key"><span class="swatch"></span> Performance</span>
-        <span style="margin-left:auto;">Times indicative — subject to curatorial drift</span>
-      </div>
-    </div>
+    <p class="lede">Three days, three states. 15 — 17 August, 14:00 — 23:00 daily. The lineup is programmed as one continuous emotional arc — from quiet density into nu-metal core, and finally into the records that shaped the whole vocabulary of alternative metal.</p>
   </div>
 </section>
 
@@ -219,55 +88,110 @@
 
     <div class="day-header">
       <span class="day-num">01</span>
-      <h2>Atmosphere<span class="sub">Emotional / atmospheric</span></h2>
-      <span class="day-stage">Thursday 14.08<br>Main · Atmosphere · Night Session</span>
+      <h2>Atmosphere<span class="sub">Grunge / Post-Grunge / Alternative Rock</span></h2>
+      <span class="day-stage">Saturday 15.08</span>
     </div>
     <div class="day-body">
       <p class="day-text serif capitular">The opening day is a slow descent into sound. One headline name, then an emotional, more nicheous trajectory. Internal noise becomes external architecture; the audience does not enter a concert, it enters a climate. Volume is secondary — texture, density and quiet tension are the point.</p>
       <div class="artists-list">
-        <div class="artist-card headline"><span class="name">Deftones</span><span class="meta">22:30 · Main · Headline</span></div>
-        <div class="artist-card"><span class="name">Failure</span><span class="meta">21:00 · Atmosphere</span></div>
-        <div class="artist-card"><span class="name">Hum</span><span class="meta">19:30 · Atmosphere</span></div>
-        <div class="artist-card"><span class="name">Nothing</span><span class="meta">23:45 · Night Session</span></div>
-        <div class="artist-card"><span class="name">Cloakroom</span><span class="meta">18:00 · Atmosphere</span></div>
-        <div class="artist-card"><span class="name">Superheaven</span><span class="meta">17:00 · Atmosphere</span></div>
-        <div class="artist-card"><span class="name">Title Fight</span><span class="meta">01:30 · Night Session</span></div>
+        <div class="artist-card"><span class="name">Foo Fighters</span></div>
+        <div class="artist-card"><span class="name">Pearl Jam</span></div>
+        <div class="artist-card"><span class="name">Alice In Chains</span></div>
+        <div class="artist-card"><span class="name">Soundgarden</span></div>
+        <div class="artist-card"><span class="name">Stone Temple Pilots</span></div>
+        <div class="artist-card"><span class="name">Smashing Pumpkins</span></div>
+        <div class="artist-card"><span class="name">Bush</span></div>
+        <div class="artist-card"><span class="name">Red Hot Chili Peppers</span></div>
+        <div class="artist-card"><span class="name">3 Doors Down</span></div>
+        <div class="artist-card"><span class="name">Three Days Grace</span></div>
+        <div class="artist-card"><span class="name">Seether</span></div>
+        <div class="artist-card"><span class="name">Chevelle</span></div>
+        <div class="artist-card"><span class="name">Alter Bridge</span></div>
+        <div class="artist-card"><span class="name">The Pretty Reckless</span></div>
+        <div class="artist-card"><span class="name">Godsmack</span></div>
+        <div class="artist-card"><span class="name">Buckcherry</span></div>
+        <div class="artist-card"><span class="name">Evans Blue</span></div>
+        <div class="artist-card"><span class="name">Taproot</span></div>
+        <div class="artist-card"><span class="name">Default</span></div>
+        <div class="artist-card"><span class="name">Saliva</span></div>
+        <div class="artist-card"><span class="name">12 Stones</span></div>
+        <div class="artist-card"><span class="name">Nonpoint</span></div>
+        <div class="artist-card"><span class="name">Sick Puppies</span></div>
+        <div class="artist-card"><span class="name">Red</span></div>
       </div>
     </div>
 
     <div class="day-header">
       <span class="day-num">02</span>
-      <h2>Chaos<span class="sub">Nu-metal core</span></h2>
-      <span class="day-stage">Friday 15.08<br>Main · Chaos Stage · Industrial Pavilion</span>
+      <h2>Chaos<span class="sub">Nu Metal / Alternative Metal / Groove Metal</span></h2>
+      <span class="day-stage">Sunday 16.08</span>
     </div>
     <div class="day-body">
       <p class="day-text serif capitular">Day two is the loud one. Two big names anchor the night and the rest is the real underground of nu-metal — the bands that lived the scene from inside, far from the algorithm. The architecture begins to fracture under the weight of its own resonance.</p>
       <div class="artists-list">
-        <div class="artist-card headline"><span class="name">Slipknot</span><span class="meta">23:30 · Main · Headline</span></div>
-        <div class="artist-card headline"><span class="name">Korn</span><span class="meta">21:30 · Main · Headline</span></div>
-        <div class="artist-card"><span class="name">Primer 55</span><span class="meta">18:00 · Chaos</span></div>
-        <div class="artist-card"><span class="name">Spineshank</span><span class="meta">19:30 · Chaos</span></div>
-        <div class="artist-card"><span class="name">Dope</span><span class="meta">00:45 · Industrial</span></div>
-        <div class="artist-card"><span class="name">Hed PE</span><span class="meta">17:00 · Chaos</span></div>
-        <div class="artist-card"><span class="name">40 Below Summer</span><span class="meta">02:00 · Industrial</span></div>
+        <div class="artist-card"><span class="name">Korn</span></div>
+        <div class="artist-card"><span class="name">Deftones</span></div>
+        <div class="artist-card"><span class="name">Slipknot</span></div>
+        <div class="artist-card"><span class="name">Linkin Park</span></div>
+        <div class="artist-card"><span class="name">System of a Down</span></div>
+        <div class="artist-card"><span class="name">Disturbed</span></div>
+        <div class="artist-card"><span class="name">Limp Bizkit</span></div>
+        <div class="artist-card"><span class="name">Static-X</span></div>
+        <div class="artist-card"><span class="name">Mudvayne</span></div>
+        <div class="artist-card"><span class="name">Pantera</span></div>
+        <div class="artist-card"><span class="name">Soulfly</span></div>
+        <div class="artist-card"><span class="name">Adema</span></div>
+        <div class="artist-card"><span class="name">Drowning Pool</span></div>
+        <div class="artist-card"><span class="name">Spineshank</span></div>
+        <div class="artist-card"><span class="name">Mushroomhead</span></div>
+        <div class="artist-card"><span class="name">Powerman 5000</span></div>
+        <div class="artist-card"><span class="name">Coal Chamber</span></div>
+        <div class="artist-card"><span class="name">Kittie</span></div>
+        <div class="artist-card"><span class="name">Staind</span></div>
+        <div class="artist-card"><span class="name">Nothingface</span></div>
+        <div class="artist-card"><span class="name">Darkest Hour</span></div>
+        <div class="artist-card"><span class="name">Unloco</span></div>
       </div>
     </div>
 
     <div class="day-header">
       <span class="day-num">03</span>
-      <h2>Legacy<span class="sub">Reflection / closure</span></h2>
-      <span class="day-stage">Saturday 16.08<br>Main · Legacy · Atmosphere</span>
+      <h2>Legacy<span class="sub">Heavy / Thrash / Groove / Alternative Metal</span></h2>
+      <span class="day-stage">Monday 17.08</span>
     </div>
     <div class="day-body">
       <p class="day-text serif capitular">The final day connects the festival to the bands and records that shaped the whole emotional vocabulary of alternative and post-hardcore — the influences and the closure. The archive closes for the year.</p>
       <div class="artists-list">
-        <div class="artist-card headline"><span class="name">Metallica</span><span class="meta">23:30 · Main · Headline</span></div>
-        <div class="artist-card"><span class="name">Helmet</span><span class="meta">21:30 · Main</span></div>
-        <div class="artist-card"><span class="name">Quicksand</span><span class="meta">19:30 · Legacy</span></div>
-        <div class="artist-card"><span class="name">Handsome</span><span class="meta">17:30 · Legacy</span></div>
-        <div class="artist-card"><span class="name">Torche</span><span class="meta">18:30 · Legacy</span></div>
-        <div class="artist-card"><span class="name">Floor</span><span class="meta">00:30 · Atmosphere</span></div>
-        <div class="artist-card"><span class="name">Spotlights</span><span class="meta">02:00 · Atmosphere</span></div>
+        <div class="artist-card"><span class="name">Metallica</span></div>
+        <div class="artist-card"><span class="name">Pantera</span></div>
+        <div class="artist-card"><span class="name">Iron Maiden</span></div>
+        <div class="artist-card"><span class="name">Judas Priest</span></div>
+        <div class="artist-card"><span class="name">Slayer</span></div>
+        <div class="artist-card"><span class="name">Megadeth</span></div>
+        <div class="artist-card"><span class="name">Machine Head</span></div>
+        <div class="artist-card"><span class="name">Sepultura</span></div>
+        <div class="artist-card"><span class="name">Lamb of God</span></div>
+        <div class="artist-card"><span class="name">Trivium</span></div>
+        <div class="artist-card"><span class="name">Avenged Sevenfold</span></div>
+        <div class="artist-card"><span class="name">Motorhead</span></div>
+        <div class="artist-card"><span class="name">Gojira</span></div>
+        <div class="artist-card"><span class="name">Killswitch Engage</span></div>
+        <div class="artist-card"><span class="name">As I Lay Dying</span></div>
+        <div class="artist-card"><span class="name">Shadows Fall</span></div>
+        <div class="artist-card"><span class="name">Soulfly</span></div>
+        <div class="artist-card"><span class="name">DevilDriver</span></div>
+        <div class="artist-card"><span class="name">Death Angel</span></div>
+        <div class="artist-card"><span class="name">Fear Factory</span></div>
+        <div class="artist-card"><span class="name">Annotations</span></div>
+        <div class="artist-card"><span class="name">The Ghost Inside</span></div>
+        <div class="artist-card"><span class="name">Bury Your Dead</span></div>
+        <div class="artist-card"><span class="name">God Forbid</span></div>
+        <div class="artist-card"><span class="name">All That Remains</span></div>
+        <div class="artist-card"><span class="name">Chimaira</span></div>
+        <div class="artist-card"><span class="name">Unearth</span></div>
+        <div class="artist-card"><span class="name">Caliban</span></div>
+        <div class="artist-card"><span class="name">Martyr</span></div>
+        <div class="artist-card"><span class="name">Misery Signals</span></div>
       </div>
     </div>
 
@@ -277,8 +201,8 @@
 <section class="section tight section--brown-deep">
   <div class="container">
     <span class="eyebrow">Stages</span>
-    <h2 style="margin: 12px 0 30px;">Four spatial environments</h2>
-    <div class="grid-4">
+    <h2 style="margin: 12px 0 30px;">Three spatial environments</h2>
+    <div class="grid-3">
       <div class="card">
         <span class="card-num">★ 01</span>
         <h3>Main</h3>
@@ -293,11 +217,6 @@
         <span class="card-num">★ 03</span>
         <h3>Industrial Pavilion</h3>
         <p>Concrete shell repurposed for dense, brutal sets. Capacity 3 000.</p>
-      </div>
-      <div class="card">
-        <span class="card-num">★ 04</span>
-        <h3>Night Session</h3>
-        <p>After-hours archive program — drone, doom, ambient ritual until dawn.</p>
       </div>
     </div>
   </div>
@@ -330,18 +249,18 @@
       <div class="footer-column">
         <h4>Sponsors</h4>
         <div class="sponsors">
-          <img src="assets/sponsors/sts.svg" alt="STS">
-          <img src="assets/sponsors/mts.svg" alt="MTS">
-          <img src="assets/sponsors/sber.svg" alt="Sber">
-          <img src="assets/sponsors/yandex.svg" alt="Yandex">
-          <img src="assets/sponsors/ultra.svg" alt="Ultra">
-          <img src="assets/sponsors/tcl.svg" alt="TCL">
+          <img src="assets/logo/BLANCO/SVG/STS_Blanco.svg" alt="STS">
+          <img src="assets/logo/BLANCO/SVG/MTS_Blanco.svg" alt="MTS">
+          <img src="assets/logo/BLANCO/SVG/SBER_Blanco.svg" alt="Sber">
+          <img src="assets/logo/BLANCO/SVG/YANDEX_Blanco.svg" alt="Yandex">
+          <img src="assets/logo/BLANCO/SVG/ULTRA_Blanco.svg" alt="Ultra">
+          <img src="assets/logo/BLANCO/SVG/TCL_Blanco.svg" alt="TCL">
         </div>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© 2026 MetalHolic Festival — Red Square Edition</span>
-      <span>Moscow ★ 14 — 16.08.2026</span>
+      <span>Moscow ★ 15 — 17.08.2026</span>
     </div>
   </div>
 </footer>

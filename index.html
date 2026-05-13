@@ -4,20 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MetalHolic Festival — Nu Metal &amp; Alternative</title>
-<meta name="description" content="MetalHolic Festival — a three-day Nu Metal and alternative festival inspired by the loud part of the 2000s. Atmosphere, Chaos, Legacy. 14—16 August 2026.">
-<link rel="icon" href="assets/logo/logo.svg" type="image/svg+xml">
+<meta name="description" content="MetalHolic Festival — a three-day Nu Metal and alternative festival inspired by the loud part of the 2000s. Atmosphere, Chaos, Legacy. 15—17 August 2026.">
+<link rel="icon" href="assets/logo/SVG/MH_Regular.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;700&family=Barlow+Condensed:wght@300;400;500;700&family=Rock+Salt&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&family=Barlow+Condensed:wght@300;400;500;700&family=Rock+Salt&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header class="header">
-  <a href="index.html" class="logo">
-    <img src="assets/logo/logo.svg" alt="MetalHolic Festival">
-    <span class="logo-word">MetalHolic</span>
-  </a>
+  <div class="header-left">
+    <a class="logo" href="index.html">
+      <img src="assets/logo/SVG/Secondary_Horizontal.svg" alt="MetalHolic Festival">
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">Festival</button>
+  </div>
   <button class="menu-toggle" id="menuToggle" aria-label="Open menu">≡</button>
   <nav class="nav" id="navMenu">
     <a href="lineup.html">Lineup</a>
@@ -30,23 +32,51 @@
   </nav>
 </header>
 
-<section class="hero">
-  <img src="assets/images/hero.jpg" alt="MetalHolic Festival — Red Square Edition">
-  <div class="hero-overlay"></div>
-
-  <div class="hero-meta">
-    <strong>Edition III</strong>
-    Moscow · Red Square<br>
-    14 — 16 August 2026
-  </div>
-
-  <div class="hero-text">
-    <div>
-      <span class="hero-tagline">a love letter to the loud part of the 2000s</span>
-      <h1>METAL<em>HOLIC</em></h1>
+<div class="fullscreen-menu" id="fullscreenMenu">
+  <button class="fullscreen-close" id="fullscreenClose" aria-label="Close menu">✕</button>
+  <nav class="fullscreen-nav">
+    <div class="fs-category">
+      <span class="fs-cat-head"><span class="slash">/</span>Festival</span>
+      <div class="fs-cat-items">
+        <a href="index.html">Home</a>
+        <a href="lineup.html">Lineup</a>
+        <a href="tours.html">Tours</a>
+        <a href="tickets.html">Tickets</a>
+      </div>
     </div>
-    <p>Three days of nu-metal, alternative and post-hardcore programmed as one continuous emotional arc. Atmosphere. Chaos. Legacy.</p>
+    <div class="fs-category">
+      <span class="fs-cat-head"><span class="slash">/</span>Community</span>
+      <div class="fs-cat-items">
+        <a href="forum.html">Forum</a>
+        <a href="press.html">Press</a>
+        <a href="about.html">Mi MetalHolic</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="fs-category">
+      <span class="fs-cat-head"><span class="slash">/</span>Legal</span>
+      <div class="fs-cat-items">
+        <a href="legal-notice.html">Legal Notice</a>
+        <a href="cookies.html">Cookies Policy</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </nav>
+  <div class="fullscreen-sponsors">
+    <span class="fullscreen-label">Partners</span>
+    <div class="sponsors">
+      <img src="assets/logo/BLANCO/SVG/STS_Blanco.svg" alt="STS">
+      <img src="assets/logo/BLANCO/SVG/MTS_Blanco.svg" alt="MTS">
+      <img src="assets/logo/BLANCO/SVG/SBER_Blanco.svg" alt="Sber">
+      <img src="assets/logo/BLANCO/SVG/YANDEX_Blanco.svg" alt="Yandex">
+      <img src="assets/logo/BLANCO/SVG/ULTRA_Blanco.svg" alt="Ultra">
+      <img src="assets/logo/BLANCO/SVG/TCL_Blanco.svg" alt="TCL">
+    </div>
   </div>
+</div>
+
+<section class="hero">
+  <img src="assets/images/Banner_Artists_Hero.webp" alt="MetalHolic Festival — Red Square Edition">
 </section>
 
 <div class="marquee" aria-hidden="true">
@@ -75,34 +105,34 @@
     <h2>Now &nbsp;/ &nbsp;Upcoming</h2>
     <div class="live-grid">
       <div class="live-card now">
-        <span class="live-tag">Now playing · Day 1</span>
+        <span class="live-tag">Day 1</span>
         <h3>Deftones</h3>
-        <p>Main Stage · 22:30</p>
+        <p>Atmosphere · Grunge &amp; Post-Grunge</p>
       </div>
       <div class="live-card">
-        <span class="live-tag">Next · Day 1</span>
-        <h3>Failure</h3>
-        <p>Atmosphere · 21:00</p>
+        <span class="live-tag">Day 1</span>
+        <h3>Foo Fighters</h3>
+        <p>Atmosphere · Grunge &amp; Post-Grunge</p>
       </div>
       <div class="live-card">
-        <span class="live-tag">Late · Day 1</span>
-        <h3>Title Fight</h3>
-        <p>Night Session · 01:30</p>
-      </div>
-      <div class="live-card">
-        <span class="live-tag">Tomorrow · Day 2</span>
+        <span class="live-tag">Day 2</span>
         <h3>Slipknot</h3>
-        <p>Main Stage · 23:30</p>
+        <p>Chaos · Nu Metal</p>
       </div>
       <div class="live-card">
-        <span class="live-tag">Tomorrow · Day 2</span>
+        <span class="live-tag">Day 2</span>
         <h3>Korn</h3>
-        <p>Main Stage · 21:30</p>
+        <p>Chaos · Nu Metal</p>
       </div>
       <div class="live-card">
-        <span class="live-tag">Closing · Day 3</span>
+        <span class="live-tag">Day 3</span>
         <h3>Metallica</h3>
-        <p>Main Stage · 23:30</p>
+        <p>Legacy · Heavy Metal</p>
+      </div>
+      <div class="live-card">
+        <span class="live-tag">Day 3</span>
+        <h3>Pantera</h3>
+        <p>Legacy · Groove Metal</p>
       </div>
     </div>
   </div>
@@ -110,7 +140,7 @@
 
 <section class="section section--brown-deep">
   <div class="container">
-    <span class="eyebrow">Agenda — 14·15·16 August 2026</span>
+    <span class="eyebrow">Agenda — 15·16·17 August 2026</span>
     <h2 style="font-size:clamp(40px,6vw,80px); color:var(--c-paper); margin: 12px 0 22px;">When and where</h2>
 
     <div class="chip-row" style="margin-bottom: 36px;">
@@ -145,32 +175,32 @@
       <div>
         <div class="col-label">Next sessions</div>
         <div class="feed-pin">
-          <span class="pin-num">14</span>
-          <span><span class="pin-mon">August</span><br><span class="pin-year">2026 · Thursday</span></span>
+          <span class="pin-num">15</span>
+          <span><span class="pin-mon">August</span><br><span class="pin-year">2026 · Saturday</span></span>
         </div>
         <div class="event-feed">
           <article class="event-card">
             <span class="type-pill atmos">Day 1 · Atmosphere</span>
             <h3 class="event-title">Deftones</h3>
-            <span class="event-meta">22:30 · Headline</span>
+            <span class="event-meta">Headline</span>
             <span class="event-loc">Main Stage · Red Square</span>
           </article>
           <article class="event-card">
             <span class="type-pill atmos">Day 1 · Atmosphere</span>
-            <h3 class="event-title">Failure</h3>
-            <span class="event-meta">21:00 · Atmosphere</span>
-            <span class="event-loc">Atmosphere Stage</span>
+            <h3 class="event-title">Foo Fighters</h3>
+            <span class="event-meta">Grunge / Post-Grunge</span>
+            <span class="event-loc">Main Stage · Red Square</span>
           </article>
           <article class="event-card">
             <span class="type-pill chaos">Day 2 · Chaos</span>
             <h3 class="event-title">Slipknot</h3>
-            <span class="event-meta">23:30 · Headline</span>
+            <span class="event-meta">Nu Metal</span>
             <span class="event-loc">Main Stage · Red Square</span>
           </article>
           <article class="event-card">
             <span class="type-pill legacy">Day 3 · Legacy</span>
             <h3 class="event-title">Metallica</h3>
-            <span class="event-meta">23:30 · Closing</span>
+            <span class="event-meta">Heavy Metal</span>
             <span class="event-loc">Main Stage · Red Square</span>
           </article>
         </div>
@@ -186,18 +216,18 @@
 
     <div class="day-header">
       <span class="day-num">01</span>
-      <h2>Atmosphere<span class="sub">Emotional / atmospheric</span></h2>
-      <span class="day-stage">14.08 · Main · Atmosphere</span>
+      <h2>Atmosphere<span class="sub">Grunge / Post-Grunge / Alternative Rock</span></h2>
+      <span class="day-stage">15.08 · Saturday</span>
     </div>
     <div class="day-body">
       <p class="day-text serif capitular">One headline name and a deeper, more nicheous trajectory. Internal noise becoming external architecture. Tension, density and quiet distortion. The descent begins here.</p>
       <div class="artists-list">
-        <div class="artist-card headline"><span class="name">Deftones</span><span class="meta">22:30 · Headline</span></div>
-        <div class="artist-card"><span class="name">Failure</span><span class="meta">21:00 · Atmosphere</span></div>
-        <div class="artist-card"><span class="name">Hum</span><span class="meta">19:30 · Atmosphere</span></div>
-        <div class="artist-card"><span class="name">Title Fight</span><span class="meta">01:30 · Night</span></div>
-        <div class="artist-card"><span class="name">Cloakroom</span><span class="meta">18:00 · Atmosphere</span></div>
-        <div class="artist-card"><span class="name">Superheaven</span><span class="meta">17:00 · Atmosphere</span></div>
+        <div class="artist-card"><span class="name">Foo Fighters</span></div>
+        <div class="artist-card"><span class="name">Pearl Jam</span></div>
+        <div class="artist-card"><span class="name">Alice In Chains</span></div>
+        <div class="artist-card"><span class="name">Soundgarden</span></div>
+        <div class="artist-card"><span class="name">Red Hot Chili Peppers</span></div>
+        <div class="artist-card"><span class="name">Smashing Pumpkins</span></div>
       </div>
     </div>
 
@@ -267,13 +297,13 @@
       <span class="eyebrow">Partners</span>
       <h3 style="color:var(--c-bg); margin-top:8px;">Sponsors of the third edition</h3>
     </div>
-    <div class="sponsors" style="filter:invert(1);">
-      <img src="assets/sponsors/sts.svg" alt="STS">
-      <img src="assets/sponsors/mts.svg" alt="MTS">
-      <img src="assets/sponsors/sber.svg" alt="Sber">
-      <img src="assets/sponsors/yandex.svg" alt="Yandex">
-      <img src="assets/sponsors/ultra.svg" alt="Ultra">
-      <img src="assets/sponsors/tcl.svg" alt="TCL">
+    <div class="sponsors" style="filter:brightness(0);">
+      <img src="assets/logo/BLANCO/SVG/STS_Blanco.svg" alt="STS">
+      <img src="assets/logo/BLANCO/SVG/MTS_Blanco.svg" alt="MTS">
+      <img src="assets/logo/BLANCO/SVG/SBER_Blanco.svg" alt="Sber">
+      <img src="assets/logo/BLANCO/SVG/YANDEX_Blanco.svg" alt="Yandex">
+      <img src="assets/logo/BLANCO/SVG/ULTRA_Blanco.svg" alt="Ultra">
+      <img src="assets/logo/BLANCO/SVG/TCL_Blanco.svg" alt="TCL">
     </div>
   </div>
 </section>
@@ -305,18 +335,18 @@
       <div class="footer-column">
         <h4>Sponsors</h4>
         <div class="sponsors">
-          <img src="assets/sponsors/sts.svg" alt="STS">
-          <img src="assets/sponsors/mts.svg" alt="MTS">
-          <img src="assets/sponsors/sber.svg" alt="Sber">
-          <img src="assets/sponsors/yandex.svg" alt="Yandex">
-          <img src="assets/sponsors/ultra.svg" alt="Ultra">
-          <img src="assets/sponsors/tcl.svg" alt="TCL">
+      <img src="assets/logo/BLANCO/SVG/STS_Blanco.svg" alt="STS">
+      <img src="assets/logo/BLANCO/SVG/MTS_Blanco.svg" alt="MTS">
+      <img src="assets/logo/BLANCO/SVG/SBER_Blanco.svg" alt="Sber">
+      <img src="assets/logo/BLANCO/SVG/YANDEX_Blanco.svg" alt="Yandex">
+      <img src="assets/logo/BLANCO/SVG/ULTRA_Blanco.svg" alt="Ultra">
+      <img src="assets/logo/BLANCO/SVG/TCL_Blanco.svg" alt="TCL">
         </div>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© 2026 MetalHolic Festival</span>
-      <span>Nu Metal · Alternative · 14 — 16.08.2026</span>
+      <span>Nu Metal · Alternative · 15 — 17.08.2026</span>
     </div>
   </div>
 </footer>

@@ -5,19 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cookies Policy — MetalHolic Festival</title>
 <meta name="description" content="MetalHolic Festival Cookies Policy — what we set, why, and how to control it.">
-<link rel="icon" href="assets/logo/logo.svg" type="image/svg+xml">
+<link rel="icon" href="assets/logo/SVG/MH_Regular.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;700&family=Barlow+Condensed:wght@300;400;500;700&family=Rock+Salt&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&family=Barlow+Condensed:wght@300;400;500;700&family=Rock+Salt&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header class="header">
-  <a href="index.html" class="logo">
-    <img src="assets/logo/logo.svg" alt="MetalHolic Festival">
-    <span class="logo-word">MetalHolic</span>
-  </a>
+  <div class="header-left">
+    <a class="logo" href="index.html">
+      <img src="assets/logo/SVG/Secondary_Horizontal.svg" alt="MetalHolic Festival">
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">Festival</button>
+  </div>
   <button class="menu-toggle" id="menuToggle" aria-label="Open menu">≡</button>
   <nav class="nav" id="navMenu">
     <a href="lineup.html">Lineup</a>
@@ -29,6 +31,49 @@
     <a href="tickets.html" class="ticket-btn">Tickets</a>
   </nav>
 </header>
+
+<div class="fullscreen-menu" id="fullscreenMenu">
+  <button class="fullscreen-close" id="fullscreenClose" aria-label="Close menu">✕</button>
+  <nav class="fullscreen-nav">
+    <div class="fs-category">
+      <span class="fs-cat-head"><span class="slash">/</span>Festival</span>
+      <div class="fs-cat-items">
+        <a href="index.html">Home</a>
+        <a href="lineup.html">Lineup</a>
+        <a href="tours.html">Tours</a>
+        <a href="tickets.html">Tickets</a>
+      </div>
+    </div>
+    <div class="fs-category">
+      <span class="fs-cat-head"><span class="slash">/</span>Community</span>
+      <div class="fs-cat-items">
+        <a href="forum.html">Forum</a>
+        <a href="press.html">Press</a>
+        <a href="about.html">Mi MetalHolic</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="fs-category">
+      <span class="fs-cat-head"><span class="slash">/</span>Legal</span>
+      <div class="fs-cat-items">
+        <a href="legal-notice.html">Legal Notice</a>
+        <a href="cookies.html">Cookies Policy</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </nav>
+  <div class="fullscreen-sponsors">
+    <span class="fullscreen-label">Partners</span>
+    <div class="sponsors">
+      <img src="assets/logo/BLANCO/SVG/STS_Blanco.svg" alt="STS">
+      <img src="assets/logo/BLANCO/SVG/MTS_Blanco.svg" alt="MTS">
+      <img src="assets/logo/BLANCO/SVG/SBER_Blanco.svg" alt="Sber">
+      <img src="assets/logo/BLANCO/SVG/YANDEX_Blanco.svg" alt="Yandex">
+      <img src="assets/logo/BLANCO/SVG/ULTRA_Blanco.svg" alt="Ultra">
+      <img src="assets/logo/BLANCO/SVG/TCL_Blanco.svg" alt="TCL">
+    </div>
+  </div>
+</div>
 
 <section class="page-head">
   <div class="container">
@@ -116,15 +161,15 @@
       <div class="footer-column"><h4>Legal</h4><a href="legal-notice.html">Legal Notice</a><a href="cookies.html">Cookies Policy</a><a href="privacy.html">Privacy Policy</a></div>
       <div class="footer-column"><h4>Sponsors</h4>
         <div class="sponsors">
-          <img src="assets/sponsors/sts.svg" alt="STS"><img src="assets/sponsors/mts.svg" alt="MTS">
-          <img src="assets/sponsors/sber.svg" alt="Sber"><img src="assets/sponsors/yandex.svg" alt="Yandex">
-          <img src="assets/sponsors/ultra.svg" alt="Ultra"><img src="assets/sponsors/tcl.svg" alt="TCL">
+          <img src="assets/logo/BLANCO/SVG/STS_Blanco.svg" alt="STS"><img src="assets/logo/BLANCO/SVG/MTS_Blanco.svg" alt="MTS">
+          <img src="assets/logo/BLANCO/SVG/SBER_Blanco.svg" alt="Sber"><img src="assets/logo/BLANCO/SVG/YANDEX_Blanco.svg" alt="Yandex">
+          <img src="assets/logo/BLANCO/SVG/ULTRA_Blanco.svg" alt="Ultra"><img src="assets/logo/BLANCO/SVG/TCL_Blanco.svg" alt="TCL">
         </div>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© 2026 MetalHolic Festival — Red Square Edition</span>
-      <span>Moscow ★ 14 — 16.08.2026</span>
+      <span>Moscow ★ 15 — 17.08.2026</span>
     </div>
   </div>
 </footer>
